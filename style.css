@@ -5,8 +5,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-
-    background-image: url('images/background1.jpg');
+}
+body {
+    background-image: url('images/background.jpg');
     background-size: cover; /* 让图片覆盖整个页面 */
     background-position: center; /* 让图片居中显示 */
     background-repeat: no-repeat; /* 防止图片重复 */
@@ -16,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background: #333;
     color: #fff;
@@ -29,11 +31,57 @@ section {
     margin-bottom: 2rem;
 }
 footer {
-    background: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: fadeIn 2s ease-in-out;
 }
