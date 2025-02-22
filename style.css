@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    background-image: url('images/background1.jpg');
+    background-image: url('https://github.com/HansYuHC/haichuanyu.github.io/blob/main/images/background1.jpg?raw=true');
     background-size: cover; /* 让图片覆盖整个页面 */
     background-position: center; /* 让图片居中显示 */
     background-repeat: no-repeat; /* 防止图片重复 */
