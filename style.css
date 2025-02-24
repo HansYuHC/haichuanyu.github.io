@@ -21,23 +21,24 @@ header {
 }
 main {
     padding: 1rem;
+    padding-bottom: 4rem; /* 增加底部内边距，避免内容被 footer 遮挡 */
+
 }
 section {
     margin-bottom: 2rem;
 }
+
+
 footer {
     background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0; /* 减少上下内边距 */
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
+    font-size: 0.9em; /* 缩小字体大小 */
+    line-height: 1.4; /* 调整行高 */
 }
 
 footer a:hover {
@@ -79,4 +80,12 @@ nav ul li a:hover {
 
 h1 {
     animation: fadeIn 2s ease-in-out;
+}
+
+/* Logo 样式 */
+.logo {
+    width: 50px; /* 调整 Logo 大小 */
+    height: 40px;
+    vertical-align: middle; /* 让 Logo 与文字垂直居中 */
+    margin-right: 10px; /* 调整 Logo 与文字的间距 */
 }
