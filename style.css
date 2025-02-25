@@ -7,6 +7,23 @@ body {
     color: #333;
 }
 
+/* 半透明背景层 */
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
+    padding: 1rem; /* 内边距 */
+    border-radius: 8px; /* 圆角 */
+    max-width: 800px; /* 限制宽度 */
+    margin: 0 auto; /* 居中 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 阴影 */
+
+}
+
+/* 文字颜色 */
+.content-wrapper h2,
+.content-wrapper p {
+    color: #333; /* 深色文字 */
+}
+
 header {
     background: #333;
     color: #fff;
@@ -87,6 +104,22 @@ h1 {
     height: 40px;
     vertical-align: middle; /* 让 Logo 与文字垂直居中 */
     margin-right: 10px; /* 调整 Logo 与文字的间距 */
+}
+
+/* 莱州鸿源的 Logo 样式 */
+.hongyuan-logo {
+    width: 90px; /* 横向拉长 */
+    height: 40px; /* 保持高度不变 */
+}
+
+.stabilus-logo {
+    width: 90px;
+    height: 40px;
+}
+
+.bertrandt-logo {
+    width: 90px;
+    height: 40px;
 }
 
 /* 平滑滚动 */
