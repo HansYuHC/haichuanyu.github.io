@@ -5,12 +5,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    background-image: url('https://github.com/HansYuHC/haichuanyu.github.io/blob/main/images/background1.jpg?raw=true');
-    background-size: cover; /* 让图片覆盖整个页面 */
-    background-position: center; /* 让图片居中显示 */
-    background-repeat: no-repeat; /* 防止图片重复 */
-    background-attachment: fixed; /* 让背景图片固定不动 */
-    color: #fff; /* 设置文字颜色为白色，确保与背景对比明显 */
 }
 
 header {
@@ -39,6 +33,11 @@ footer {
     bottom: 0;
     font-size: 0.9em; /* 缩小字体大小 */
     line-height: 1.4; /* 调整行高 */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -88,4 +87,9 @@ h1 {
     height: 40px;
     vertical-align: middle; /* 让 Logo 与文字垂直居中 */
     margin-right: 10px; /* 调整 Logo 与文字的间距 */
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
 }
