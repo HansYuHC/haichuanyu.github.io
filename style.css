@@ -149,4 +149,14 @@ section ul li {
     margin-bottom: 0.5rem;
 }
 
+/* 兴趣图标 */
+.interest-icons {
+    display: flex;
+    gap: 1rem; /* 图标之间的间距 */
+    margin-bottom: 1rem;
+}
 
+.interest-icons .icon {
+    width: 40px; /* 调整图标宽度 */
+    height: 40px; /* 调整图标高度 */
+}

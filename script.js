@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }).addTo(qingdaoMap);
 
         const qingdaoMarkers = [
-            { latlng: [36.0671, 120.3826], popup: '青岛市中心' },
-            { latlng: [36.0900, 120.3800], popup: '我的小学：XXX小学' },
-            { latlng: [36.0800, 120.3700], popup: '我的初中：XXX中学' },
-            { latlng: [36.0700, 120.3600], popup: '我的高中：XXX高中' }
+            { latlng: [36.07224, 120.41488], popup: '我的幼儿园: 临近青岛大学' },
+            { latlng: [36.07104, 120.40755], popup: '我的小学：青岛新世纪学校' },
+            { latlng: [36.07312, 120.34485], popup: '我的初中：青岛超银中学' },
+            { latlng: [36.11358, 120.48313], popup: '我的高中：青岛二中' }
         ];
 
         qingdaoMarkers.forEach(marker => {
@@ -30,10 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }).addTo(germanyMap);
 
         const germanyMarkers = [
-            { latlng: [48.7904, 9.0857], popup: '伯布林根 - 我的居住地' },
-            { latlng: [49.0069, 8.4037], popup: '卡尔斯鲁厄 - 我的母校：卡尔斯鲁厄理工学院' },
-            { latlng: [48.1351, 11.5820], popup: '慕尼黑 - 旅游胜地' },
-            { latlng: [52.5200, 13.4050], popup: '柏林 - 德国首都' }
+            { latlng: [48.68453, 9.01200], popup: '伯布林根 - 我的居住及工作地' },
+            { latlng: [49.01263, 8.41572], popup: '卡尔斯鲁厄 - 我的母校：卡尔斯鲁厄理工学院' },
+            { latlng: [49.56334, 10.88694], popup: '黑措根奥拉赫 - Schaeffler AG 总部，我的实习公司' },
+            { latlng: [50.37716, 7.60306], popup: '科布伦茨 - Stabilus SE 总部，我的实习公司' },
+            { latlng: [52.32205, 9.81258], popup: '汉诺威 - 汉诺威展览所在地' },
+            { latlng: [51.25924, 6.74316], popup: '杜塞尔多夫 - 杜塞尔多夫冶金展所在地' }
         ];
 
         germanyMarkers.forEach(marker => {
