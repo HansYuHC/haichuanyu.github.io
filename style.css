@@ -126,3 +126,27 @@ h1 {
 html {
     scroll-behavior: smooth;
 }
+
+/* 地图容器样式 */
+#qingdao-map,
+#germany-map {
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 阴影 */
+    margin-bottom: 2rem;
+}
+
+/* 内容样式 */
+section {
+    margin-bottom: 2rem;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+}
+
+

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于我 - 余海川的个人网站</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <header>
@@ -20,9 +22,35 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="about">
             <h2>关于我</h2>
-            <p>青岛 -> 广州 -> 卡尔斯鲁厄 -> 伯布林根</p>
+            <p>我是余海川，一名来自中国青岛，热爱技术和创新的机械工程师，目前居住在德国伯布林根，在Bertrandt AG工作，主要从事汽车电子控制单元的开发测试以及主机厂原型车辆的研发相关工作。我热爱技术创新，喜欢通过编程和数据分析解决实际问题。</p>
+            <h3>青岛</h3>
+            <div id="qingdao-map" style="height: 400px; margin-bottom: 2rem;"></div>
+            <h3>德国</h3>
+            <div id="germany-map" style="height: 400px;"></div>
+        </section>
+        <section id="education">
+        <h2>教育经历</h2>
+            <p>华南理工大学 - 机械工程学士</p>
+            <p>卡尔斯鲁厄理工学院 - 机械工程硕士</p>
+        </section>
+        <section id="interests">
+            <h2>兴趣与爱好</h2>
+            <div class="interest-icons">
+                <img src="images/travel-icon.png" alt="旅行" class="icon">
+                <img src="images/camera-icon.png" alt="摄影" class="icon">
+                <img src="images/code-icon.png" alt="编程" class="icon">
+            </div>
+            <p>我喜欢海岛旅行，与电脑对弈，欣赏动作科幻电影，利用AI编程，听华语流行音乐，热衷于探索新技术。</p>
+        </section>
+        <section id="skills">
+            <h2>技能与专长</h2>
+            <ul>
+                <li>机械设计与仿真</li>
+                <li>汽车电子控制单元测试与开发</li>
+                <li>编程语言：MATLAB, Python, CANoe，DTS Monaco，JavaScript</li>
+            </ul>
         </section>
     </main>
     <footer>
@@ -31,5 +59,8 @@
             <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank">LinkedIn</a>
         </p>
     </footer>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
