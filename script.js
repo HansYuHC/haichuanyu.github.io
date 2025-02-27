@@ -3,15 +3,39 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("about.html detected, initializing maps...");
 
         // 青岛地图
-        const qingdaoMap = L.map('qingdao-map').setView([36.0671, 120.3826], 12);
+        const qingdaoMap = L.map('qingdao-map').setView([36.0671, 120.3826], 11.5);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(qingdaoMap);
 
         const qingdaoMarkers = [
-            { latlng: [36.07224, 120.41488], popup: '我的幼儿园: 临近青岛大学' },
-            { latlng: [36.07104, 120.40755], popup: '我的小学：青岛新世纪学校' },
-            { latlng: [36.07312, 120.34485], popup: '我的初中：青岛超银中学' },
+            { latlng: [36.07224, 120.41488],
+                popup: `
+                    <h4>我的幼儿园:青岛幼儿师范学校附属幼儿园</h4>
+                    <img src="images/kindergarten.png" alt="我的幼儿园" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>临近青岛大学，与小盆友们分享奥特曼玩偶，是我童年的起点。</p>
+                    <a href="http://www.sdzjw.com/m/zs/qdyesf/" target="_blank">访问幼儿园官网</a>
+                `
+                },
+
+            { latlng: [36.07104, 120.40755],
+                popup: `
+                    <h4>我的小学:青岛新世纪学校</h4>
+                    <img src="images/xinshiji.png" alt="青岛新世纪学校" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>2000-2006, 我在这里度过了快乐的小学时光。成绩名列班级前茅，德智体美劳全面发展，曾代表学校参加区级运动会。</p>
+                    <a href="http://www.qingdaoxsj.com" target="_blank">访问学校官网</a>
+                `
+            },
+
+            { latlng: [36.07312, 120.34485],
+            popup: `
+                    <h4>我的初中：青岛超银中学</h4>
+                    <img src="images/chaoyin.png" alt="青岛超银中学" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>我在这里经过了三年的锤炼，打下了扎实的学习基础，曾历任班级安全委员，物理课代表等职务，代表班级和学校参加编程竞赛培训以及英语能力竞赛，并且成为班级里唯二考入青岛二中的优秀毕业生。</p>
+                    <a href="http://www.qdchaoyinschool.com" target="_blank">访问学校官网</a>
+                `
+            },
+
             { latlng: [36.11358, 120.48313], popup: '我的高中：青岛二中' }
         ];
 
