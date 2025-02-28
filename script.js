@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("about.html detected, initializing maps...");
 
         // 青岛地图
-        const qingdaoMap = L.map('qingdao-map').setView([36.0671, 120.3826], 11.5);
+        const qingdaoMap = L.map('qingdao-map').setView([36.0771, 120.3826], 11.5);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(qingdaoMap);
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h4>我的小学:青岛新世纪学校</h4>
                     <img src="images/xinshiji.png" alt="青岛新世纪学校" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
                     <p>2000-2006, 我在这里度过了快乐的小学时光。成绩名列班级前茅，德智体美劳全面发展，曾代表学校参加区级运动会。</p>
-                    <a href="http://www.qingdaoxsj.com" target="_blank">访问学校官网</a>
+                    <a href="http://www.qingdaoxsj.com" target="_blank">访问新世纪官网</a>
                 `
             },
 
@@ -32,11 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h4>我的初中：青岛超银中学</h4>
                     <img src="images/chaoyin.png" alt="青岛超银中学" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
                     <p>我在这里经过了三年的锤炼，打下了扎实的学习基础，曾历任班级安全委员，物理课代表等职务，代表班级和学校参加编程竞赛培训以及英语能力竞赛，并且成为班级里唯二考入青岛二中的优秀毕业生。</p>
-                    <a href="http://www.qdchaoyinschool.com" target="_blank">访问学校官网</a>
+                    <a href="http://www.qdchaoyinschool.com" target="_blank">访问超银官网</a>
                 `
             },
 
-            { latlng: [36.11358, 120.48313], popup: '我的高中：青岛二中' }
+            { latlng: [36.11358, 120.48313],
+            popup: `
+                    <h4>我的高中：青岛二中</h4>
+                    <img src="images/erzhong.png" alt="青岛二中" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>慈龟山下，静思湖畔，留下了热血少年青葱的岁月，我在这里度过了紧张而又充实的高中生活，以高考644的成绩考入理想的大学。</p>
+                    <a href="http://www.qderzhong.net" target="_blank">访问二中官网</a>
+                `
+            }
         ];
 
         qingdaoMarkers.forEach(marker => {
@@ -54,12 +61,54 @@ document.addEventListener("DOMContentLoaded", function () {
         }).addTo(germanyMap);
 
         const germanyMarkers = [
-            { latlng: [48.68453, 9.01200], popup: '伯布林根 - 我的居住及工作地' },
-            { latlng: [49.01263, 8.41572], popup: '卡尔斯鲁厄 - 我的母校：卡尔斯鲁厄理工学院' },
-            { latlng: [49.56334, 10.88694], popup: '黑措根奥拉赫 - Schaeffler AG 总部，我的实习公司' },
-            { latlng: [50.37716, 7.60306], popup: '科布伦茨 - Stabilus SE 总部，我的实习公司' },
-            { latlng: [52.32205, 9.81258], popup: '汉诺威 - 汉诺威展览所在地' },
-            { latlng: [51.25924, 6.74316], popup: '杜塞尔多夫 - 杜塞尔多夫冶金展所在地' }
+            { latlng: [48.68453, 9.01200],
+            popup: `
+                    <h4>伯布林根</h4>
+                    <img src="images/boeblingen.png" alt="伯布林根" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>我目前居住在伯布林根，市区街道蜿蜒起伏，是一个别有韵味的小城。城市北边的辛德芬根坐落着梅赛德斯奔驰最大的工厂。</p>
+                    <a href="https://www.boeblingen.de" target="_blank">访问伯布林根市官网</a>
+                `
+            },
+            { latlng: [49.01263, 8.41572],
+            popup: `
+                    <h4>卡尔斯鲁厄</h4>
+                    <img src="images/karlsruhe.png" alt="卡尔斯鲁厄理工学院" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>我在这座城市度过了20到30岁的十年时光，是我的第二故乡。从刚到德国的懵懂无知，入学语言班，学习德语，就读于卡尔斯鲁厄机械制造专业本科及研究生并顺利毕业，考取德国驾照，恋爱结婚生女，这座城市见证了我人生中难忘的十年。</p>
+                    <a href="https://www.kit.edu" target="_blank">访问卡尔斯鲁厄理工学院官网</a>
+                `
+            },
+            { latlng: [49.56334, 10.88694],
+            popup: `
+                    <h4>黑尔措根奥拉赫</h4>
+                    <img src="images/schaeffler.png" alt="Schaeffler AG" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>这座城市坐落着著名机械制造行业供应商舍弗勒公司，我在这里的转动轴研发部门完成了机械制造专业本科阶段的义务实习。</p>
+                    <a href="https://www.schaeffler.com" target="_blank">访问舍弗勒公司官网</a>
+                `
+            },
+            { latlng: [50.37716, 7.60306],
+             popup: `
+                    <h4>科布伦茨</h4>
+                    <img src="images/koblenz.png" alt="koblenz" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>林河旁边的这座德国著名的旅游城市，德国之角所在地，是斯泰必鲁斯公司的总部。这是一家生产空气弹簧及阻尼器等的制造企业。我在这里的创新研发部门完成了机械制造研究生阶段的自由实习。</p>
+                    <a href="https://www.koblenz.de" target="_blank">访问科布伦茨城市官网</a>
+                `
+             },
+            { latlng: [52.32205, 9.81258],
+            popup: `
+                    <h4>汉诺威</h4>
+                    <img src="images/hannover.png" alt="汉诺威" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>汉诺威展览是德国最大的工业展览，在课余时间我有幸代表国内企业参展，收获颇丰。</p>
+                    <a href="https://www.hannovermesse.de" target="_blank">访问汉诺威展览官网</a>
+                `
+            },
+            { latlng: [51.25924, 6.74316],
+             popup: `
+                    <h4>杜塞尔多夫</h4>
+                    <img src="images/duesseldorf.png" alt="杜塞尔多夫" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
+                    <p>杜塞尔多夫冶金展是欧洲最大的冶金展览。2019年我有幸参展的同时，也领略这座国际化大都市的风采。</p>
+                    <a href="https://www.messe-duesseldorf.de" target="_blank">访问杜塞尔多夫冶金展官网</a>
+                `
+             }
         ];
 
         germanyMarkers.forEach(marker => {
