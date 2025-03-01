@@ -32,7 +32,7 @@ header {
 }
 main {
     padding: 1rem;
-    padding-bottom: 4rem; /* 增加底部内边距，避免内容被 footer 遮挡 */
+    padding-bottom: 6rem; /* 增加底部内边距，避免内容被 footer 遮挡 */
 
 }
 section {
