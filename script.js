@@ -127,4 +127,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log("Resize listener added.");
     }
+    else if (window.location.pathname.endsWith('academic.html')) {
+    // 青岛二中 Swiper 实例
+        var qdezSwiper = new Swiper('.qdez-swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.qdez-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.qdez-next',
+                prevEl: '.qdez-prev',
+            },
+        });
+
+        // 华南理工大学 Swiper 实例
+        var scutSwiper = new Swiper('.scut-swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.scut-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.scut-next',
+                prevEl: '.scut-prev',
+            },
+        });
+    }
 });
+
+

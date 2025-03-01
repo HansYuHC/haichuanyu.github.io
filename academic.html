@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>学术成果 - 余海川的个人网站</title>
     <link rel="stylesheet" href="style.css">
+    <!-- 引入 Swiper 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -22,18 +24,76 @@
     <main>
         <section>
             <h2>学术成果</h2>
-            <p>
-                <img src="images/qdez-logo.png" alt="山东省青岛第二中学 Logo" class="logo">
-                山东省青岛第二中学
-            </p>
-            <p>
-                <img src="images/scut-logo.png" alt="华南理工大学 Logo" class="logo">
-                华南理工大学
-            </p>
-            <p>
-                <img src="images/kit-logo.png" alt="卡尔斯鲁厄理工学院 Logo" class="logo">
-                卡尔斯鲁厄理工学院
-            </p>
+            <!-- 青岛二中时间轴 -->
+            <div class="academic-section">
+                <h3>山东省青岛第二中学 (2009年9月 - 2012年6月)</h3>
+                <div class="swiper-container qdez-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 时间轴内容 -->
+                        <div class="swiper-slide">
+                            <h4>2009年9月</h4>
+                            <p>在2009年的中考中，我以602分(满分650)的优异成绩从超银中学考入青岛二中，分入了高一5班，开始了高中阶段的学习生活。</p>
+                            <img src="images/qdez-entrance.png" alt="中考入学" class="timeline-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>2010年9月</h4>
+                            <p>参加学校秋季运动会</p>
+                            <img src="images/qdez-sports.png" alt="文理分科" class="timeline-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>2011年10月</h4>
+                            <p>文理分科，选择了理科方向。</p>
+                            <img src="images/qdez-science.png" alt="运动会" class="timeline-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>2012年6月</h4>
+                            <p>参加高考，以644分(满分750分)的成绩顺利考入211和985重点大学广州华南理工大学。</p>
+                            <img src="images/qdez-graduation.png" alt="高考" class="timeline-image">
+                        </div>
+                    </div>
+                    <!-- 分页器 -->
+                    <div class="swiper-pagination qdez-pagination"></div>
+                    <!-- 导航按钮 -->
+                    <div class="swiper-button-next qdez-next"></div>
+                    <div class="swiper-button-prev qdez-prev"></div>
+                </div>
+            </div>
+
+            <!-- 华南理工大学部分 -->
+            <div class="academic-section">
+                <h3>华南理工大学 (2012年8月 - 2013年2月)</h3>
+                <div class="swiper-container scut-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 时间轴内容 -->
+                        <div class="swiper-slide">
+                            <h4>2012年8月</h4>
+                            <p>入学华南理工大学，开始了大学生活。</p>
+                            <img src="images/scut-entrance.jpg" alt="入学" class="timeline-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>2012年10月</h4>
+                            <p>开始学习德语，为未来的留学做准备。</p>
+                            <img src="images/scut-german.jpg" alt="学习德语" class="timeline-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4>2013年2月</h4>
+                            <p>参加第一学期期末考试，成绩优异。</p>
+                            <img src="images/scut-exam.jpg" alt="期末考试" class="timeline-image">
+                        </div>
+                    </div>
+                    <!-- 分页器 -->
+                    <div class="swiper-pagination scut-pagination"></div>
+                    <!-- 导航按钮 -->
+                    <div class="swiper-button-next scut-next"></div>
+                    <div class="swiper-button-prev scut-prev"></div>
+                </div>
+            </div>
+
+            <!-- 卡尔斯鲁厄理工学院部分 -->
+            <div class="academic-section">
+                <h3>卡尔斯鲁厄理工学院</h3>
+                <p>待补充...</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -42,5 +102,11 @@
             <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank">LinkedIn</a>
         </p>
     </footer>
+
+    <!-- 引入 Swiper 的 JavaScript 文件 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 初始化 Swiper -->
+    <script src="script.js">
+    </script>
 </body>
 </html>
