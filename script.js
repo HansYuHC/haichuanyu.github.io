@@ -155,6 +155,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 prevEl: '.scut-prev',
             },
         });
+
+        // 卡尔斯鲁厄理工学院 Swiper 实例
+        var scutSwiper = new Swiper('.kit-swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.kit-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.kit-next',
+                prevEl: '.kit-prev',
+            },
+        });
     }
 });
 

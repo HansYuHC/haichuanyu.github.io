@@ -203,7 +203,9 @@ section ul li {
 .timeline-image {
     width: 100%;
     max-width: 300px;
+    max-height: 200px; /* 限制图片的最大高度 */
     height: auto;
+    object-fit: contain; /* 确保图片完整显示 */
     margin-top: 15px;
     border-radius: 10px;
 }
