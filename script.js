@@ -173,3 +173,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//时间轴测试
+document.addEventListener('DOMContentLoaded', function () {
+    const points = document.querySelectorAll('.timeline-point');
+    const events = document.querySelectorAll('.timeline-event');
+
+    // 初始化时间点位置
+    function updateTimeline() {
+        points.forEach((point, index) => {
+            const event = events[index];
+            const eventRect = event.getBoundingClientRect();
+            const containerRect = event.parentElement.getBoundingClientRect();
+
+            // 设置时间点的水平位置
+            const left = eventRect.left - containerRect.left + eventRect.width / 2;
+            point.style.left = `${left}px`;
+
+            // 设置连接线的高度
+            const connector = point.querySelector('.timeline-connector');
+            const connectorHeight = eventRect.top - containerRect.bottom;
+            connector.style.height = `${connectorHeight}px`;
+        });
+    }
+
+    // 初始化
+    updateTimeline();
+
+    // 监听窗口大小变化
+    window.addEventListener('resize', updateTimeline);
+});

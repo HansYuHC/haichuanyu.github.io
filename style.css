@@ -285,3 +285,128 @@ section ul li {
     }
 }
 
+
+/* 时间轴测试 */
+
+/* 青岛二中时间轴容器 */
+.qdez-timeline-container {
+    margin-bottom: 60px; /* 与华南理工大学的标题拉开距离 */
+}
+
+/* 华南理工大学标题 */
+.scut-section h3 {
+    margin-top: 40px; /* 与青岛二中的时间轴拉开距离 */
+    margin-bottom: 20px; /* 靠近自己的内容 */
+}
+
+/* 时间轴容器 */
+.timeline-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* 时间轴线 */
+.timeline-axis {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #007bff;
+}
+
+/* 横向箭头 */
+.timeline-axis::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #007bff;
+    transform: translateY(-50%);
+}
+
+/* 时间点 */
+.timeline-point {
+    position: absolute;
+    bottom: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+/* 带箭头的连接线 */
+.timeline-connector {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 2px;
+    height: 100px;
+    background-color: #007bff;
+    transform: translateX(-50%);
+}
+
+.timeline-connector::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid #007bff;
+    transform: translateX(-50%);
+}
+
+/* 内容区域 */
+.timeline-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+/* 事件容器 */
+.timeline-event {
+    position: relative;
+    width: 23%;
+    text-align: center;
+}
+
+/* 事件描述 */
+.event-description {
+    margin-bottom: 20px;
+}
+
+/* 图片样式 */
+.event-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 文字描述样式 */
+.event-description p {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin-top: 10px;
+}
+/* 分割线样式 */
+.section-divider {
+    border: 0;
+    height: 2px;
+    background-color: #ccc; /* 分割线颜色 */
+    margin: 40px 0; /* 上下间距 */
+}
