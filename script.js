@@ -180,10 +180,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 初始化时间点位置
     function updateTimeline() {
+        // 获取所有图片的高度
+        const imageHeights = Array.from(events).map(event => {
+            const image = event.querySelector('.event-image');
+            return image.getBoundingClientRect().height;
+        });
+        const maxHeight = Math.max(...imageHeights); // 获取最大高度
+
         points.forEach((point, index) => {
             const event = events[index];
             const eventRect = event.getBoundingClientRect();
             const containerRect = event.parentElement.getBoundingClientRect();
+            const image = event.querySelector('.event-image'); // 获取图片元素
+            const imageRect = image.getBoundingClientRect(); // 获取图片的尺寸
 
             // 设置时间点的水平位置
             const left = eventRect.left - containerRect.left + eventRect.width / 2;
@@ -191,8 +200,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // 设置连接线的高度
             const connector = point.querySelector('.timeline-connector');
-            const connectorHeight = eventRect.top - containerRect.bottom;
+            // const connectorHeight = eventRect.top - containerRect.bottom;
+            const connectorHeight = maxHeight - imageRect.height + 120; // 动态调整高度
+            console.log(`Event ${index + 1}: Connector Height = ${connectorHeight}px`); // 调试输出
             connector.style.height = `${connectorHeight}px`;
+
         });
     }
 

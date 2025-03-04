@@ -349,7 +349,7 @@ section ul li {
     bottom: 20px;
     left: 50%;
     width: 2px;
-    height: 100px;
+    height: auto;
     background-color: #007bff;
     transform: translateX(-50%);
 }
@@ -390,7 +390,7 @@ section ul li {
 /* 图片样式 */
 .event-image {
     width: 100%;
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
     border-radius: 10px;
 }
