@@ -385,11 +385,12 @@ section ul li {
 /* 事件描述 */
 .event-description {
     margin-bottom: 20px;
+    width: 85%;
 }
 
 /* 图片样式 */
 .event-image {
-    width: 100%;
+    width: 85%;
     max-width: 250px;
     height: auto;
     border-radius: 10px;
@@ -409,4 +410,53 @@ section ul li {
     height: 2px;
     background-color: #ccc; /* 分割线颜色 */
     margin: 40px 0; /* 上下间距 */
+}
+
+
+/* 公司标题样式 */
+.company-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.company-header:hover {
+    background-color: #f1f1f1;
+}
+
+/* 小箭头样式 */
+.arrow {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* 公司内容区域样式 */
+.company-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* 展开状态 */
+.company-content.expanded {
+    max-height: 500px; /* 根据内容高度调整 */
+    padding: 10px;
+}
+
+/* 工作照片样式 */
+.work-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
 }

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             popup: `
                     <h4>我的高中：青岛二中</h4>
                     <img src="images/erzhong.png" alt="青岛二中" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
-                    <p>慈龟山下，静思湖畔，留下了热血少年青葱的岁月，我在这里度过了紧张而又充实的高中生活，以高考644的成绩考入理想的大学。</p>
+                    <p>慈龟山下，静思湖畔，留下了热血少年青葱的岁月，我在这里度过了紧张而又充实的高中生活，以高考646的成绩考入理想的大学。</p>
                     <a href="http://www.qderzhong.net" target="_blank">访问二中官网</a>
                 `
             }
@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function () {
     const points = document.querySelectorAll('.timeline-point');
     const events = document.querySelectorAll('.timeline-event');
+    const fixedDistance = 10; // 连接线顶部与图片底部的固定距离（可以根据需要调整）
 
     // 初始化时间点位置
     function updateTimeline() {
@@ -200,8 +201,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // 设置连接线的高度
             const connector = point.querySelector('.timeline-connector');
-            // const connectorHeight = eventRect.top - containerRect.bottom;
             const connectorHeight = maxHeight - imageRect.height + 120; // 动态调整高度
+            // const connectorHeight = +imageRect.bottom - eventRect.top + fixedDistance; // 连接线高度 = 图片底部到事件顶部的距离 + 固定距离
             console.log(`Event ${index + 1}: Connector Height = ${connectorHeight}px`); // 调试输出
             connector.style.height = `${connectorHeight}px`;
 
@@ -213,4 +214,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 监听窗口大小变化
     window.addEventListener('resize', updateTimeline);
+});
+
+
+// JavaScript 实现展开/收起功能
+document.addEventListener('DOMContentLoaded', function () {
+    const companyHeaders = document.querySelectorAll('.company-header');
+
+    companyHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+            const content = this.nextElementSibling;
+            const arrow = this.querySelector('.arrow');
+
+            // 切换内容区域的显示状态
+            content.classList.toggle('expanded');
+            arrow.textContent = content.classList.contains('expanded') ? '▼' : '▶';
+        });
+    });
 });
