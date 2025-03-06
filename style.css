@@ -108,7 +108,7 @@ h1 {
 
 /* 莱州鸿源的 Logo 样式 */
 .hongyuan-logo {
-    width: 90px; /* 横向拉长 */
+    width: 120px; /* 横向拉长 */
     height: 40px; /* 保持高度不变 */
 }
 
@@ -437,7 +437,7 @@ section ul li {
 /* 公司内容区域样式 */
 .company-content {
     max-height: 0;
-    overflow: hidden;
+    overflow: auto;
     transition: max-height 0.3s ease-out;
     padding: 0 10px;
     background-color: #fff;
