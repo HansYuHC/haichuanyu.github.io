@@ -454,9 +454,16 @@ section ul li {
 
 /* 工作照片样式 */
 .work-image {
-    width: 100%;
+    width: auto;
     max-width: 300px;
     height: auto;
     margin-top: 10px;
     border-radius: 5px;
+}
+
+/* 图片容器样式 */
+.image-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    gap: 20px; /* 图片之间的间距 */
+    margin-top: 10px; /* 与上方内容的间距 */
 }
