@@ -118,11 +118,20 @@
                     </a>
                 </div>
                 <div class="company-content">
-                    <p></p>
+                    <p>Bertrandt AG 是一家位于巴登-符腾堡州埃宁根(Ehningen)的提供机械工程方面研发服务的上市公司。约有 14000 名员工在 50 多个地点工作，主要位于欧洲，但也在美国和中国，同时还为汽车和飞机行业的客户提供服务。</p>
+                    <p>在卡尔斯鲁厄理工学院机械制造专业研究生毕业之后，我于2022年7月入职埃宁根的Betrandt AG，担任研发工程师。</p>
+                    <p>在Bertrandt AG我在项目组"CarIT Security Testhouse"工作。项目主要内容是为主机厂梅赛德斯奔驰公司研发测试不同的车辆电子控制单元(ECU, Electronic Control Unit)。具体为在特制的测试台架上研发测试ECU的安全性能相关的功能，利用CANoe生成测试报告，分析报告中的错误，并且进行错误分析及追踪。</p>
                     <div class="image-container">
-                        <img src="images/bertrandt-work.png" alt="Bertrandt工作照片" class="work-image">
+                        <img src="images/bertrandt-work2.png" alt="Bertrandt工作照片" class="work-image">
+                        <img src="images/bertrandt-work.png" alt="另一张Bertrandt工作照片" class="work-image">
                     </div>
-                    <p></p>
+                    <p>每周会有不同数量的ECU运送到我们项目组来进行测试。在ECU被接收到之后，首先会进行登记，我们会用到Jira以及Confluence来进行版本管理以及ECU的登记。之后会对ECU的软件版本和硬件版本进行读取，如果与预期的不一样，则需要将ECU与电脑连接，并通过DTS Monaco进行ECU的程序刷斜，以使其拥有正确的测试用软件及硬件版本。</p>
+                    <p>需要注意的是不同的ECU拥有不同的总线通信系统CAN， Flexray或者是Ethernet。对于前两者会有High和Low两条线来用于通信，Ethernet则是有一个Wakeup Line。因此在ECU连接时需要注意总线的区分。</p>
+                    <p>在ECU正确连接及刷写完毕之后，需要在CANoe中配置正确的测试环境。不同的ECU以及总线通信系统需要不同的测试环境。配置完成之后会简单检查一下ECU是否会对测试环境的询问做出应答，如果没有，则需要重新检查一遍</p>
+                    <p>随后会在测试环境中首先进行ECU调试，这里会有大概20个测试用例，持续时间5到30分钟不等。如果调试过后生成的测试报告里没有严重的错误，则可以进行ECU的完整测试，大概200至500个测试用例，其时长为5到10个小时不等。</p>
+                    <p>具体的测试用例的内容则会集中于ECU的安全性能。奔驰公司自己研发了ZenZefi系统，即中央证书管理系统(Zentrale Zertifikatsverwaltung)。每一个ECU都预先安装了证书,分别是Root(根证书)，Backend(后端证书)，Intermediate(中间证书)和ECU证书。如果没有一个完整的证书链，则该ECU无法进行安全测试。</p>
+                    <p>安全变体编码，安全程序刷写以及安全机载通信，是主要的测试项目。除此之外还会进行TLS(Transport Layer Security, 传输层安全)测试，Gateway Test(网关测试)等一些其他测试。</p>
+                    <p>在测试报告生成之后，我们会对其进行错误分析，并利用奔驰公司的STARC错误追踪登记系统进行报告上传，并与研发同事讨论分析错误原因，进行改进。</p>
                 </div>
             </div>
 
