@@ -1,0 +1,38 @@
+{
+  "en": {
+    "welcome": "Welcome to Haichuan Yu's Personal Website",
+    "home": "Home",
+    "about": "About Me",
+    "academic": "Academic Achievements",
+    "work": "Work Experience",
+    "contact": "Contact",
+    "aboutDescription": "Qingdao -> Guangzhou -> Karlsruhe -> Böblingen",
+    "copyright": "\u00A9 2025 Haichuan Yu. All rights reserved.",
+    "followMe": "Follow me:",
+    "linkedin": "LinkedIn"
+  },
+  "de": {
+    "welcome": "Willkommen auf Haichuan Yus persönlicher Website",
+    "home": "Startseite",
+    "about": "Über mich",
+    "academic": "Akademische Leistungen",
+    "work": "Berufserfahrung",
+    "contact": "Kontakt",
+    "aboutDescription": "Qingdao -> Guangzhou -> Karlsruhe -> Böblingen",
+    "copyright": "\u00A9 2025 Haichuan Yu. Alle Rechte vorbehalten.",
+    "followMe": "Folge mir:",
+    "linkedin": "LinkedIn"
+  },
+  "zh": {
+    "welcome": "欢迎来到余海川的个人网站",
+    "home": "首页",
+    "about": "关于我",
+    "academic": "学术成果",
+    "work": "工作经历",
+    "contact": "联系方式",
+    "aboutDescription": "青岛->广州->卡尔斯鲁厄->伯布林根",
+    "copyright": "\u00A9 2025 余海川。 保留所有权利。",
+    "followMe": "关注我：",
+    "linkedin": "LinkedIn"
+  }
+}

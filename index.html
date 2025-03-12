@@ -8,25 +8,17 @@
 </head>
 <body style="background-image: url('https://github.com/HansYuHC/haichuanyu.github.io/blob/main/images/background1.jpg?raw=true'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
     <header>
-        <h1>欢迎来到余海川的个人网站</h1>
-        <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="about.html">关于我</a></li> <!-- 链接到 about.html -->
-            <li><a href="academic.html">学术成果</a></li> <!-- 链接到 academic.html -->
-            <li><a href="work.html">工作经历</a></li> <!-- 链接到 work.html -->
-            <li><a href="contact.html">联系方式</a></li> <!-- 链接到 contact.html -->
-        </ul>
-    </nav>
+        <h1 data-lang-key="welcome">欢迎来到余海川的个人网站</h1>
+        <div id="navbar"></div>
     </header>
     <main>
         <div class="content-wrapper"> <!-- 添加半透明背景层 -->
         <section id="about">
-            <h2>关于我</h2>
-            <p>青岛->广州->卡尔斯鲁厄->伯布林根</p>
+            <h2 data-lang-key="about">关于我</h2>
+            <p data-lang-key="aboutDescription">青岛->广州->卡尔斯鲁厄->伯布林根</p>
         </section>
         <section id="academic">
-            <h2>学术成果</h2>
+            <h2 data-lang-key="academic">学术成果</h2>
             <p>
                 山东省青岛第二中学
                 <img src="images/qdez-logo.png" alt="山东省青岛第二中学 Logo" class="logo">
@@ -41,7 +33,7 @@
             </p>
         </section>
         <section id="work">
-            <h2>工作经历</h2>
+            <h2 data-lang-key="work">工作经历</h2>
             <p>
                 莱州鸿源台钳制造有限公司
                 <img src="images/hongyuan-logo.png" alt="莱州鸿源台钳制造有限公司 Logo" class="logo hongyuan-logo">
@@ -71,10 +63,14 @@
       </div>
     </main>
     <footer>
-    <p>&copy; 2025 余海川。 保留所有权利。</p>
-    <p>关注我：
-        <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank">LinkedIn</a>
+    <p data-lang-key="copyright">&copy; 2025 余海川。 保留所有权利。</p>
+    <p>
+        <span data-lang-key="followMe">关注我：</span>
+        <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank" data-lang-key="linkedin">LinkedIn</a>
     </p>
+    <button onclick="changeLanguage('zh')">中文</button>
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('de')">Deutsch</button>
 </footer>
     <script src="script.js"></script>
 </body>

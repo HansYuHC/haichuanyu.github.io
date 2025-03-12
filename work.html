@@ -139,7 +139,7 @@
             <div class="company">
                 <div class="company-header">
                     <span class="arrow">▶</span>
-                    <p>Mercedes-Benz AG (ANÜ von Bertrandt) (2024年4月 至今)</p>
+                    <p>Mercedes-Benz AG (ANÜ von Bertrandt) (2024年4月 - 2025年9月)</p>
                     <a href="https://www.mercedes-benz.com/" target="_blank">
                         <img src="images/mercedes-logo.png" alt="Mercedes-Benz AG Logo" class="logo">
                     </a>
@@ -151,7 +151,9 @@
                         <img src="images/mercedes-work.png" alt="mercedes工作照片" class="work-image">
                         <img src="images/mercedes-work2.png" alt="另一张mercedes工作照片" class="work-image">
                     </div>
-                    <p>我所负责的项目为奔驰公司的223M系列，即对S级以及迈巴赫S级轿车进行静态调试。对于一个系列的车型，通常会根据研发阶段分为E，A和B阶段。E阶段即研发阶段，A和B则为正式量产之前的调试阶段，之后会进行到Pro1和Pro2阶段。每一个阶段都会有若干车辆运送到增产工厂以测试最新的软件版本，在包括静态调试，动态调试以及扩展功能测试在内的调试工作完成之后，车辆会被送到研发部门进行下一阶段测试。</p>
+                    <p>我所负责的项目为奔驰公司的223M系列，即对S级以及迈巴赫S级轿车进行静态调试。对于一个系列的车型，通常会根据研发阶段分为E，A和B阶段。E阶段即研发阶段，A和B则为正式量产之前的调试阶段，之后会进行到Pro1和Pro2正式生产阶段。每一个阶段都会有若干车辆运送到增产工厂以测试最新的软件版本，在包括静态调试，动态调试以及扩展功能测试在内的调试工作完成之后，车辆会被送到研发部门进行下一阶段测试。</p>
+                    <p>静态调试用到了奔驰的IS-Tester，这是一个专门用于自动化测试的手提式便携测试仪。在与车载OBD接口连接之后，IS-Tester即可以开始对被测车辆进行不同的测试。测试完成后的报告会上传到奔驰的服务器以供分析及下载。测试脚本是基于C语言开发的NiSP(Neue Intelligente Schnittstelle Programm)语言。如果测试报告中有需要进一步分析的错误，则会对生成报告的脚本逐行检视，并联系研发部门同事分析解决。</p>
+                    <p>在分析测试报告的错误并解决的同时，我也利用Python脚本对不同研发阶段的各个车辆的错误情况及错误处理时间进行了分析，以便优化流程，更高效地进行静态调试及其他步骤的工作。</p>
                 </div>
             </div>
 
@@ -164,6 +166,16 @@
             <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank">LinkedIn</a>
         </p>
     </footer>
+
+    <!-- 模态框 -->
+    <div id="leaveModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000;">
+        <p>请不要离开我！😢</p>
+        <button onclick="closeModal()">关闭</button>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
+
 
     <script src="script.js"></script> <!-- 引入 script.js -->
 </body>

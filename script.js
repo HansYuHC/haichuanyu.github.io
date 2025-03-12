@@ -232,3 +232,103 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // 监听鼠标移动到窗口外的事件
+    document.addEventListener("mouseleave", function (event) {
+        // 如果鼠标移动到窗口顶部之外
+        if (event.clientY < 0) {
+            showModal(); // 显示模态框
+        }
+    });
+
+    // 监听用户尝试关闭网页或刷新页面的事件
+    window.addEventListener("beforeunload", function (event) {
+        // 弹出浏览器默认的确认对话框
+        // event.preventDefault();
+        // event.returnValue = ""; // 必须设置 returnValue 才能触发对话框
+    });
+});
+
+// 显示模态框
+function showModal() {
+    document.getElementById("leaveModal").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+
+// 关闭模态框
+function closeModal() {
+    document.getElementById("leaveModal").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}
+
+let currentLanguage = "zh"; // 默认语言
+
+// 加载语言文件
+function loadLanguageFile(file) {
+    return fetch(`lang/${file}.json`)
+        .then((response) => response.json())
+        .catch((error) => {
+            console.error(`Failed to load language file: ${file}`, error);
+            return {};
+        });
+}
+
+// 更新页面内容
+function updateContent(data) {
+    document.querySelectorAll("[data-lang-key]").forEach((element) => {
+        const key = element.getAttribute("data-lang-key");
+        if (data[key]) {
+            // 如果是链接，更新链接的文本内容
+            if (element.tagName.toLowerCase() === "a") {
+                element.textContent = data[key];
+            } else {
+                element.innerHTML = data[key]; // 使用 innerHTML 以支持 HTML 实体
+            }
+        }
+    });
+}
+
+// 切换语言
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    document.documentElement.setAttribute("lang", lang);
+
+    // 加载全局语言文件
+    loadLanguageFile("global").then((data) => {
+        // 更新页面内容
+        updateContent(data[currentLanguage]);
+    });
+}
+
+// 初始化页面语言
+changeLanguage(currentLanguage);
+
+// 加载导航栏
+function loadNavbar() {
+    fetch("navbar.html")
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById("navbar").innerHTML = html;
+            updateNavbarLanguage(); // 加载导航栏后更新语言
+        })
+        .catch((error) => {
+            console.error("Failed to load navbar:", error);
+        });
+}
+
+// 更新导航栏语言
+function updateNavbarLanguage() {
+    loadLanguageFile("global").then((data) => {
+        document.querySelectorAll("#navbar [data-lang-key]").forEach((element) => {
+            const key = element.getAttribute("data-lang-key");
+            if (data[currentLanguage] && data[currentLanguage][key]) {
+                element.textContent = data[currentLanguage][key];
+            }
+        });
+    });
+}
+
+// 初始化页面
+loadNavbar();
+changeLanguage(currentLanguage);
