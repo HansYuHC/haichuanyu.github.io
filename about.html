@@ -3,68 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我 - 余海川的个人网站</title>
+    <title data-lang-key="aboutTitle">关于我 - 余海川的个人网站</title>
     <link rel="stylesheet" href="style.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
-<body>
+<body data-page="about">
     <header>
-        <h1>关于我</h1>
+        <h1 data-lang-key="about">关于我</h1>
         <nav>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="academic.html">学术成果</a></li>
-                <li><a href="work.html">工作经历</a></li>
-                <li><a href="contact.html">联系方式</a></li>
+                <li><a href="index.html" data-lang-key="home">首页</a></li>
+                <li><a href="about.html" data-lang-key="about">关于我</a></li>
+                <li><a href="academic.html" data-lang-key="academic">学术成果</a></li>
+                <li><a href="work.html" data-lang-key="work">工作经历</a></li>
+                <li><a href="contact.html" data-lang-key="contact">联系方式</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about">
-            <h2>关于我</h2>
-            <p>我是余海川，一名来自中国青岛，热爱技术和创新的机械工程师，目前居住在德国伯布林根，在Bertrandt AG工作，主要从事汽车电子控制单元的开发测试以及主机厂原型车辆的研发相关工作。我热爱技术创新，喜欢通过编程和数据分析解决实际问题。</p>
-            <p>以下是我的个人教育，生活及工作经历:</p>
-            <h3>青岛</h3>
+            <h2 data-lang-key="about">关于我</h2>
+            <p data-lang-key="aboutDescription">我是余海川，一名来自中国青岛，热爱技术和创新的机械工程师，目前居住在德国伯布林根，在Bertrandt AG工作，主要从事汽车电子控制单元的开发测试以及主机厂原型车辆的研发相关工作。我热爱技术创新，喜欢通过编程和数据分析解决实际问题。</p>
+            <p data-lang-key="aboutExperience">以下是我的个人教育，生活及工作经历:</p>
+            <h3 data-lang-key="qingdao">青岛</h3>
             <div id="qingdao-map" style="height: 400px; margin-bottom: 2rem;"></div>
-            <h3>德国</h3>
+            <h3 data-lang-key="germany">德国</h3>
             <div id="germany-map" style="height: 400px;"></div>
         </section>
         <section id="education">
-        <h2>高等教育经历</h2>
-            <p>中国广州 - 华南理工大学 - 机械工程学士</p>
-            <p>德国卡尔斯鲁厄 - 卡尔斯鲁厄理工学院 - 机械工程学士及硕士</p>
+        <h2 data-lang-key="HighEducation">高等教育经历</h2>
+            <p data-lang-key="GuangzhouSCUT">中国广州 - 华南理工大学 - 机械工程学士</p>
+            <p data-lang-key="KarlsruheKIT">德国卡尔斯鲁厄 - 卡尔斯鲁厄理工学院 - 机械工程学士及硕士</p>
         </section>
         <section id="skills">
-            <h2>技能与专长</h2>
+            <h2 data-lang-key="skills">技能与专长</h2>
             <ul>
-                <li>震荡学原理与应用</li>
-                <li>机械设计与仿真</li>
-                <li>汽车电子控制单元测试与开发</li>
-                <li>德国及中国驾照，驾驶里程累计超过10万公里</li>
-                <li>熟练掌握并应用中文英文德语三种语言</li>
-                <li>编程语言：MATLAB, Python, CANoe，DTS Monaco，JavaScript</li>
+                <li data-lang-key="skill1">震荡学原理与应用</li>
+                <li data-lang-key="skill2">机械设计与仿真</li>
+                <li data-lang-key="skill3">汽车电子控制单元测试与开发</li>
+                <li data-lang-key="skill4">德国及中国驾照，驾驶里程累计超过10万公里</li>
+                <li data-lang-key="skill5">熟练掌握并应用中文英文德语三种语言</li>
+                <li data-lang-key="skill6">编程语言：MATLAB, Python, CANoe，DTS Monaco，JavaScript</li>
             </ul>
-            <p>以下是我的能力矩阵，三个对号为熟练掌握及应用，一个对号为了解基本原理并可以进行一些基础操作：</p>
+            <p data-lang-key="skillsMatrixDescription">以下是我的能力矩阵，三个对号为熟练掌握及应用，一个对号为了解基本原理并可以进行一些基础操作：</p>
     <img src="images/skills-matrix.png" alt="能力矩阵" style="width: 100%; max-width: 600px; margin-top: 0.2rem;">
         </section>
         <section id="interests">
-            <h2>兴趣与爱好</h2>
+            <h2 data-lang-key="interests">兴趣与爱好</h2>
             <div class="interest-icons">
                 <img src="images/travel-icon.png" alt="旅行" class="icon">
                 <img src="images/weiqi-icon.png" alt="围棋" class="icon">
                 <img src="images/movie-icon.png" alt="电影" class="icon">
             </div>
-            <p>我喜欢海岛旅行，与电脑对弈，欣赏动作科幻电影，利用AI编程，听华语流行音乐，热衷于探索新技术。</p>
+            <p data-lang-key="interestsDescription">我喜欢海岛旅行，与电脑对弈，欣赏动作科幻电影，利用AI编程，听华语流行音乐，热衷于探索新技术。</p>
             <p>&nbsp;</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 余海川。 保留所有权利。</p>
-        <p>关注我：
-            <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank">LinkedIn</a>
+        <p data-lang-key="copyright">&copy; 2025 余海川。 保留所有权利。</p>
+        <p>
+        <span data-lang-key="followMe">关注我：</span>
+        <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank" data-lang-key="linkedin">LinkedIn</a>
         </p>
+        <button onclick="changeLanguage('zh')">中文</button>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('de')">Deutsch</button>
     </footer>
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

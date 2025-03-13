@@ -295,9 +295,18 @@ function changeLanguage(lang) {
     document.documentElement.setAttribute("lang", lang);
 
     // 加载全局语言文件
-    loadLanguageFile("global").then((data) => {
-        // 更新页面内容
-        updateContent(data[currentLanguage]);
+    loadLanguageFile("global").then((globalData) => {
+        // 加载当前页面的语言文件
+        const page = document.body.getAttribute("data-page"); // 获取当前页面名称
+        loadLanguageFile(page).then((pageData) => {
+            // 合并全局和页面语言数据
+            const combinedData = {
+                ...globalData[currentLanguage],
+                ...pageData[currentLanguage],
+            };
+            // 更新页面内容
+            updateContent(combinedData);
+        });
     });
 }
 

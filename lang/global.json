@@ -9,7 +9,12 @@
     "aboutDescription": "Qingdao -> Guangzhou -> Karlsruhe -> Böblingen",
     "copyright": "\u00A9 2025 Haichuan Yu. All rights reserved.",
     "followMe": "Follow me:",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "qdez": "Qingdao No. 2 Middle School of Shandong Province",
+    "scut": "South China University of Technology",
+    "kit": "Karlsruhe Institute of Technology",
+    "hongyuan": "Laizhou Hongyuan vise Manufacturing Co., Ltd",
+    "luolin": "Qingdao Lolin Mech Inc."
   },
   "de": {
     "welcome": "Willkommen auf Haichuan Yus persönlicher Website",
@@ -21,7 +26,12 @@
     "aboutDescription": "Qingdao -> Guangzhou -> Karlsruhe -> Böblingen",
     "copyright": "\u00A9 2025 Haichuan Yu. Alle Rechte vorbehalten.",
     "followMe": "Folge mir:",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "qdez": "Qingdao Nr. 2 Mittelschule der Provinz Shandong",
+    "scut": "Südchinesische Technische Universität",
+    "kit": "Karlsruher Institut für Technologie",
+    "hongyuan": "Laizhou Hongyuan Schraubstock Manufacturing Co., Ltd.",
+    "loulin": "Qingdao Lolin Mech Inc."
   },
   "zh": {
     "welcome": "欢迎来到余海川的个人网站",
@@ -33,6 +43,11 @@
     "aboutDescription": "青岛->广州->卡尔斯鲁厄->伯布林根",
     "copyright": "\u00A9 2025 余海川。 保留所有权利。",
     "followMe": "关注我：",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "qdez": "山东省青岛第二中学",
+    "scut": "华南理工大学",
+    "kit": "卡尔斯鲁厄理工学院",
+    "hongyuan": "莱州鸿源台钳制造有限公司",
+    "luolin": "青岛洛林机械有限公司"
   }
 }
