@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    // 检测浏览器语言偏好并设置默认语言
+    let userLanguage = navigator.language.split('-')[0]; // 获取浏览器语言偏好
+    if (!['zh', 'en', 'de'].includes(userLanguage)) {
+        userLanguage = 'zh'; // 默认语言
+    }
+
+    // 初始化页面时加载默认语言
+    changeLanguage(userLanguage);
+
+
     if (window.location.pathname.endsWith('about.html')) {
         console.log("about.html detected, initializing maps...");
 
@@ -11,19 +22,19 @@ document.addEventListener("DOMContentLoaded", function () {
         const qingdaoMarkers = [
             { latlng: [36.07224, 120.41488],
                 popup: `
-                    <h4>我的幼儿园:青岛幼儿师范学校附属幼儿园</h4>
+                    <h4 data-lang-key="myKita">我的幼儿园:青岛幼儿师范学校附属幼儿园</h4>
                     <img src="images/kindergarten.png" alt="我的幼儿园" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
-                    <p>临近青岛大学，与小盆友们分享奥特曼玩偶，是我童年的起点。</p>
-                    <a href="http://www.sdzjw.com/m/zs/qdyesf/" target="_blank">访问幼儿园官网</a>
+                    <p data-lang-key="myKitaDescription">临近青岛大学，与小盆友们分享奥特曼玩偶，是我童年的起点。</p>
+                    <a href="http://www.sdzjw.com/m/zs/qdyesf/" target="_blank" data-lang-key="visitKita">访问幼儿园官网</a>
                 `
                 },
 
             { latlng: [36.07104, 120.40755],
                 popup: `
-                    <h4>我的小学:青岛新世纪学校</h4>
+                    <h4 data-lang-key="myPrimary">我的小学:青岛新世纪学校</h4>
                     <img src="images/xinshiji.png" alt="青岛新世纪学校" style="width: 100%; max-width: 200px; margin-bottom: 10px;">
-                    <p>2000-2006, 我在这里度过了快乐的小学时光。成绩名列班级前茅，德智体美劳全面发展，曾代表学校参加区级运动会。</p>
-                    <a href="http://www.qingdaoxsj.com" target="_blank">访问新世纪官网</a>
+                    <p data-lang-key="myPrimaryDescription">2000-2006, 我在这里度过了快乐的小学时光。成绩名列班级前茅，德智体美劳全面发展，曾代表学校参加区级运动会。</p>
+                    <a href="http://www.qingdaoxsj.com" target="_blank" data-lang-key="visitPrimary">访问新世纪官网</a>
                 `
             },
 

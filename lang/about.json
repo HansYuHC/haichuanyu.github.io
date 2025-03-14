@@ -17,7 +17,13 @@
     "skill6": "Programming Languages: MATLAB, Python, CANoe, DTS Monaco, JavaScript",
     "skillsMatrixDescription": "Below is my skills matrix, where three checkmarks indicate proficiency and one checkmark indicates basic understanding and ability to perform some fundamental operations:",
     "interests": "Interests and Hobbies",
-    "interestsDescription": "I enjoy island travel, playing Go against computers, watching action and sci-fi movies, programming with AI, listening to Chinese pop music, and exploring new technologies."
+    "interestsDescription": "I enjoy island travel, playing Go against computers, watching action and sci-fi movies, programming with AI, listening to Chinese pop music, and exploring new technologies.",
+    "myKita": "My Kindergarten: Qingdao Preschool Normal School Affiliated Kindergarten",
+    "myKitaDescription": "Near Qingdao University, sharing Ultraman dolls with my friends was the starting point of my childhood",
+    "visitKita": "Visit the kindergarten's official website",
+    "myPrimary": "My primary school: Qingdao New Century School",
+    "myPrimaryDescription": "From 2000 to 2006, I spent a happy primary school time here. My grades were among the best in the class, and I was well-rounded in moral, intellectual, physical, aesthetic and labor aspects. I once represented the school in the district sports meet.",
+    "visitPrimary": "Visit the official website of New Century School"
   },
   "de": {
     "aboutTitle": "Über mich - Haichuan Yus persönliche Website",
@@ -37,7 +43,13 @@
     "skill6": "Programmiersprachen: MATLAB, Python, CANoe, DTS Monaco, JavaScript",
     "skillsMatrixDescription": "Hier ist meine Fähigkeitsmatrix, wobei drei Häkchen für fortgeschrittene Kenntnisse und ein Häkchen für grundlegendes Verständnis und die Fähigkeit zur Durchführung einiger grundlegender Operationen stehen:",
     "interests": "Interessen und Hobbys",
-    "interestsDescription": "Ich genieße Inselreisen, spiele Go gegen Computer, schaue Action- und Science-Fiction-Filme, programmiere mit KI, höre chinesische Popmusik und erkunde neue Technologien."
+    "interestsDescription": "Ich genieße Inselreisen, spiele Go gegen Computer, schaue Action- und Science-Fiction-Filme, programmiere mit KI, höre chinesische Popmusik und erkunde neue Technologien.",
+    "myKita": "Mein Kindergarten: Angeschlossener Kindergarten der Qingdao Preschool Normal School",
+    "myKitaDescription": "In der Nähe der Universität Qingdao war das Teilen von Ultraman-Puppen mit meinen Freunden der Ausgangspunkt meiner Kindheit",
+    "visitKita": "Besuchen Sie die offizielle Website des Kindergartens",
+    "myPrimary": "Meine Grundschule: Qingdao New Century School",
+    "myPrimaryDescription": "Von 2000 bis 2006 habe ich hier eine schöne Grundschulzeit verbracht. Meine schulischen Leistungen gehören zu den besten meiner Klasse und ich verfügte über umfassende moralische, intellektuelle, körperliche, ästhetische und berufliche Fähigkeiten. Ich habe die Schule bei Bezirkssportveranstaltungen vertreten.",
+    "visitPrimary": "Besuchen Sie die offizielle Website von New Century School"
   },
   "zh": {
     "aboutTitle": "关于我 - 余海川的个人网站",
@@ -57,6 +69,12 @@
     "skill6": "编程语言：MATLAB, Python, CANoe，DTS Monaco，JavaScript",
     "skillsMatrixDescription": "以下是我的能力矩阵，三个对号为熟练掌握及应用，一个对号为了解基本原理并可以进行一些基础操作：",
     "interests": "兴趣与爱好",
-    "interestsDescription": "我喜欢海岛旅行，与电脑对弈，欣赏动作科幻电影，利用AI编程，听华语流行音乐，热衷于探索新技术。"
+    "interestsDescription": "我喜欢海岛旅行，与电脑对弈，欣赏动作科幻电影，利用AI编程，听华语流行音乐，热衷于探索新技术。",
+    "myKita": "我的幼儿园:青岛幼儿师范学校附属幼儿园",
+    "myKitaDescription": "临近青岛大学，与小盆友们分享奥特曼玩偶，是我童年的起点。",
+    "visitKita": "访问幼儿园官网",
+    "myPrimary": "我的小学:青岛新世纪学校",
+    "myPrimaryDescription": "2000-2006, 我在这里度过了快乐的小学时光。成绩名列班级前茅，德智体美劳全面发展，曾代表学校参加区级运动会。",
+    "visitPrimary": "访问新世纪官网"
   }
 }
