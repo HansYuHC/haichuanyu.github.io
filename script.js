@@ -1,6 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    // 从 URL 参数中读取语言设置
+    const urlParams = new URLSearchParams(window.location.search);
+    const langFromUrl = urlParams.get('lang');
+
     // 读取用户保存的语言设置
     let userLanguage = localStorage.getItem('userLanguage');
+
+    // 如果 URL 中有语言参数，则优先使用 URL 中的语言
+    if (langFromUrl) {
+        userLanguage = langFromUrl;
+        localStorage.setItem('userLanguage', userLanguage); // 更新 localStorage
+    }
 
     // 如果没有保存的语言设置，则使用默认语言（中文）
     if (!userLanguage) {
@@ -213,29 +224,22 @@ function updateContent(data) {
 
 // 切换语言
 function changeLanguage(lang) {
+    // 如果当前语言已经是目标语言，则无需切换
+    if (lang === currentLanguage) {
+        return;
+    }
+
     // 保存用户选择的语言
     localStorage.setItem('userLanguage', lang);
 
-    currentLanguage = lang;
-    document.documentElement.setAttribute("lang", lang);
+    // 获取当前页面的 URL
+    const currentUrl = new URL(window.location.href);
 
-    // 加载全局语言文件
-    loadLanguageFile("global").then((globalData) => {
-        // 加载当前页面的语言文件
-        const page = document.body.getAttribute("data-page"); // 获取当前页面名称
-        loadLanguageFile(page).then((pageData) => {
-            // 合并全局和页面语言数据
-            const combinedData = {
-                ...globalData[currentLanguage],
-                ...pageData[currentLanguage],
-            };
-            // 更新页面内容
-            updateContent(combinedData);
+    // 添加语言参数到 URL
+    currentUrl.searchParams.set('lang', lang);
 
-            // 更新导航栏语言
-            updateNavbarLanguage();
-        });
-    });
+    // 重定向到当前页面（带语言参数）
+    window.location.href = currentUrl.toString();
 }
 
 // 初始化页面语言
@@ -325,7 +329,7 @@ function initializeMaps(combinedData) {
 
 
     qingdaoMarkers.forEach(marker => {
-        const popupContent = translatePopup(marker.popup, combinedData);
+        const popupContent = translatePopupContent(marker.popup, combinedData);
         L.marker(marker.latlng)
             .addTo(qingdaoMap)
             .bindPopup(popupContent);
@@ -392,7 +396,7 @@ function initializeMaps(combinedData) {
 
 
     germanyMarkers.forEach(marker => {
-        const popupContent = translatePopup(marker.popup, combinedData);
+        const popupContent = translatePopupContent(marker.popup, combinedData);
         L.marker(marker.latlng)
             .addTo(germanyMap)
             .bindPopup(popupContent);
@@ -407,6 +411,27 @@ function initializeMaps(combinedData) {
     });
 
     console.log("Resize listener added.");
+}
+
+function translatePopupContent(popupTemplate, combinedData) {
+    // 创建一个临时容器来解析模板
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = popupTemplate;
+
+    // 遍历容器中的所有元素，更新带有 data-lang-key 的内容
+    tempDiv.querySelectorAll("[data-lang-key]").forEach(element => {
+        const key = element.getAttribute("data-lang-key");
+        if (combinedData[key]) {
+            if (element.tagName.toLowerCase() === "a") {
+                element.textContent = combinedData[key]; // 如果是链接，更新文本内容
+            } else {
+                element.innerHTML = combinedData[key]; // 其他元素，更新 HTML 内容
+            }
+        }
+    });
+
+    // 返回翻译后的内容
+    return tempDiv.innerHTML;
 }
 
 // 翻译弹出框内容
