@@ -39,7 +39,15 @@
     "november2021ToJune2022": "November 2021 to June 2022",
     "kitStabilusInternship": "Completed a voluntary internship during the master's program at the R&D department of Stabilus in Koblenz. Worked on noise suppression for railway tracks or wheels to advance the company's \"Silent Railway\" project. Used MATLAB and Simulink for simulation modeling, researched various noise suppression algorithms, and generated feasibility reports.",
     "june2022": "June 2022",
-    "kitGraduation": "Graduated with a master's degree in Mechanical Engineering from Karlsruhe Institute of Technology, with a final average grade of 2.0."
+    "kitGraduation": "Graduated with a master's degree in Mechanical Engineering from Karlsruhe Institute of Technology, with a final average grade of 2.0.",
+    "BachelorArbeit": "Undergraduate thesis (April 2018 - September 2018)",
+    "BA_1": "I wrote my bachelor's thesis at the Institute of Production Engineering (wbk) of the Karlsruhe Institute of Technology on the topic of \"Design of a digital twin for the lifetime monitoring of linear feed axes.\"",
+    "BA_2": "In order to establish a model for predicting the remaining service life of the axial feed shaft (the part studied in the paper is a ball screw), the necessary mathematical model was first derived and built in MATLAB. The left side of the figure below shows an actual example of a ball screw used in a 3D printer. From this, a model can be established and made part of the digital twin model of the feed shaft. (See the legend on the right side of the figure below)",
+    "BA_3": "The established model can predict the remaining service life of the feed axis in real time, simplifying the complexity of part service life monitoring and making data available at any time. In subsequent research, as long as the interface is built and the correct algorithm is provided to connect to the Internet of Things (IoT), a complete digital twin model can be generated and applied to actual production.",
+    "MasterArbeit": "Graduate Thesis (September 2020 - July 2021)",
+    "MA_1": "My master's thesis was written at the Chair of Dynamics at the Institute of Engineering Mechanics of the Karlsruhe Institute of Technology and was entitled \"Parametric investigation of the suppression of friction-induced vibrations by high-frequency excitation\".",
+    "MA_2": "The paper introduces the characteristics of single-degree-of-freedom systems and dual-degree-of-freedom systems, and solves the problem of vibration suppression of dual-degree-of-freedom systems by parameter research and reference to single-degree-of-freedom systems. There are many studies on the vibration caused by dry friction in single-degree-of-freedom systems, but the research on dual-degree-of-freedom systems is insufficient. The paper mainly attempts to use high-frequency excitation to study its effect on vibration suppression of dual-degree-of-freedom systems, and also explores the impact of high-frequency excitation on the stability of the system.",
+    "MA_3": "The paper uses advanced mathematics and linear algebra methods to analyze the effects of high-frequency external excitations with different mass, damping, and frequency parameters on the vibration reduction effect of a two-degree-of-freedom system, and concludes that the friction-induced vibration of a two-degree-of-freedom system can be effectively suppressed by using high-frequency excitations, and the stability diagram of the slow motion average equation under different excitation states can be used to evaluate the stability behavior of the system. In order to explore the effectiveness of the approximate method, the possible relationship between the external excitation frequency and the corresponding eigenvalue was found."
   },
   "de": {
     "academicTitle": "Akademische Leistungen - Haichuan Yus persönliche Website",
@@ -81,7 +89,15 @@
     "november2021ToJune2022": "November 2021 bis Juni 2022",
     "kitStabilusInternship": "Absolvierte ein freiwilliges Praktikum während des Master-Studiums in der Forschungs- und Entwicklungsabteilung von Stabilus in Koblenz. Arbeitete an der Geräuschunterdrückung für Schienen oder Räder, um das \"Silent Railway\"-Projekt des Unternehmens voranzutreiben. Nutzte MATLAB und Simulink für Simulationsmodelle, erforschte verschiedene Algorithmen zur Geräuschunterdrückung und erstellte Machbarkeitsberichte.",
     "june2022": "Juni 2022",
-    "kitGraduation": "Abschluss des Master-Studiums in Maschinenbau am Karlsruher Institut für Technologie mit einem Durchschnitt von 2,0."
+    "kitGraduation": "Abschluss des Master-Studiums in Maschinenbau am Karlsruher Institut für Technologie mit einem Durchschnitt von 2,0.",
+    "BachelorArbeit": "Bachelorarbeit (April 2018 - September 2018)",
+    "BA_1": "Meine Bachelorarbeit habe ich am Institut für Produktionstechnik (wbk) des Karlsruher Instituts für Technologie zum Thema „Konzipierung eines Digitalen Zwillings für die Lebensdauerüberwachung von linearen Vorschubachsen“ verfasst.",
+    "BA_2": "Um ein Modell zur Vorhersage der verbleibenden Lebensdauer der axialen Vorschubwelle (das im Artikel untersuchte Teil ist die Kugelumlaufspindel) zu erstellen, wurde zunächst das erforderliche mathematische Modell abgeleitet und dann in MATLAB erstellt. Die linke Seite des Bildes unten zeigt ein aktuelles Beispiel einer Kugelumlaufspindel, die in einem 3D-Drucker verwendet wird. Daraus kann ein Modell erstellt werden, das Teil des digitalen Zwillings der Vorschubachse wird. (Siehe Abbildung auf der rechten Seite des Bildes unten)",
+    "BA_3": "Das etablierte Modell kann die verbleibende Lebensdauer der Vorschubachse in Echtzeit vorhersagen. Dies vereinfacht die komplexe Überwachung der Teilelebensdauer und stellt Daten jederzeit zur Verfügung. In nachfolgenden Forschungsarbeiten kann, sofern die Schnittstelle erstellt und der richtige Algorithmus für die Verbindung mit dem Internet der Dinge (IoT) bereitgestellt wird, ein vollständiges digitales Zwillingsmodell generiert und in der realen Produktion angewendet werden.",
+    "MasterArbeit": "Masterarbeit (September 2020 - Juli 2021)",
+    "MA_1": "Meine Masterarbeit wurde am Lehrstuhl für Dynamik, Institut für Technische Mechanik, Karlsruher Institut für Technologie, mit dem Titel „Parameterstudie zur Unterdrückung reibungserregter Schwingungen mithilfe hochfrequenter Anregung\n“ angefertigt.",
+    "MA_2": "Das Papier stellt die Eigenschaften von Systemen mit einem Freiheitsgrad und Systemen mit zwei Freiheitsgraden vor und löst das Problem der Schwingungsunterdrückung in Systemen mit zwei Freiheitsgraden durch Parameterforschung und Bezugnahme auf Systeme mit einem Freiheitsgrad. Es gibt zahlreiche Studien zu Vibrationen, die durch Trockenreibung in Systemen mit einem Freiheitsgrad verursacht werden, die Forschung zu Systemen mit zwei Freiheitsgraden ist jedoch unzureichend. In diesem Artikel wird hauptsächlich versucht, die Wirkung hochfrequenter Anregungen auf die Schwingungsunterdrückung von Systemen mit zwei Freiheitsgraden zu untersuchen. Darüber hinaus wird auch der Einfluss hochfrequenter Anregungen auf die Stabilität des Systems untersucht.",
+    "MA_3": "In der Arbeit werden Methoden der höheren Mathematik und der linearen Algebra verwendet, um die Auswirkungen hochfrequenter externer Anregungen mit unterschiedlichen Parametern wie Masse, Dämpfung und Frequenz auf die Schwingungsdämpfungswirkung des Systems mit zwei Freiheitsgraden zu analysieren. Das Dokument kommt zu dem Schluss, dass sich durch die Verwendung hochfrequenter Anregungen die durch Reibung verursachte Schwingung des Systems mit zwei Freiheitsgraden wirksam unterdrücken lässt. Zudem kann das Stabilitätsdiagramm der Gleichung für den Zeitlupendurchschnitt unter unterschiedlichen Anregungszuständen zur Bewertung des Stabilitätsverhaltens des Systems verwendet werden. Um die Gültigkeit des Näherungsverfahrens zu untersuchen, wurden mögliche Zusammenhänge zwischen den äußeren Anregungsfrequenzen und den entsprechenden Eigenwerten ermittelt."
   },
   "zh": {
     "academicTitle": "学术成果 - 余海川的个人网站",
@@ -123,6 +139,14 @@
     "november2021ToJune2022": "2021年11月至2022年6月",
     "kitStabilusInternship": "在科布伦茨的斯泰必鲁斯公司的研发部门进行研究生阶段的自由实习。工作内容为研究铁路轨道或者车轮的噪声抑制，从而帮助公司的\"Silent Railway\"项目向前推进。工作中运用到了MATLAB和Simulink仿真模拟建模，来进行多种噪声抑制算法的研究和Simulink仿真分析，最终生成了可行性报告。",
     "june2022": "2022年6月",
-    "kitGraduation": "卡尔斯鲁厄机械制造研究生毕业,平均成绩最终为2,0分。"
+    "kitGraduation": "卡尔斯鲁厄机械制造研究生毕业,平均成绩最终为2,0分。",
+    "BachelorArbeit": "本科毕业论文 (2018年4月 - 2018年9月)",
+    "BA_1": "我的本科毕业论文是在卡尔斯鲁厄理工学院的生产工程研究所(wbk, Institut für Produktionstechnik)完成的，题目是《用于线性进给轴寿命监控的数字孪生设计》。",
+    "BA_2": "为了能够建立预测轴向进给轴(论文中研究的零件为滚珠丝杠)的剩余使用寿命的模型，首先推导出了必须的数学模型，并在MATLAB建模。下图左侧为一个在3D打印机中运用的滚珠丝杠的实际案例。由此可以建立模型并使之成为进给轴数字孪生模型的一部分。(见下图右侧图例)",
+    "BA_3": "建立起的模型可以实时预测进给轴的剩余使用寿命，简化了零件使用寿命监测的复杂性，并使数据随时可用，并且在后续研究中，只要搭建接口并提供正确算法，连接物联网 (IoT)，即可生成一个完整的数字孪生模型，运用到实际生产中。",
+    "MasterArbeit": "研究生毕业论文 (2020年9月 - 2021年7月)",
+    "MA_1": "我的研究生毕业论文是在卡尔斯鲁厄理工学院的工程力学研究所动力学部门完成的，题目是《利用高频激励抑制摩擦引起的振动的参数研究》。",
+    "MA_2": "论文介绍了单自由度系统和双自由度系统的特性，以及通过参数研究并参照单自由度系统，来解决双自由度系统振动抑制的问题。目前有很多对于单自由度系统由干性摩擦引起的振动的研究，但是双自由度系统的研究却有不足。论文主要尝试利用高频激励来研究其对于双自由度系统振动抑制的效果，同时也探究了高频激励对于系统的稳定性的影响。",
+    "MA_3": "论文利用高等数学及线性代数方法，分析了有不同的质量，阻尼以及频率等参数的高频外部激励对于双自由度系统减振效果的影响，并且得出结论: 采用高频激励可以有效抑制两自由度系统的摩擦诱发振动，可以使用不同激励状态下的慢运动平均方程的稳定性图来评估系统的稳定性行为。为了探讨近似方法的有效性，找到了外部激励频率和相应特征值之间的可能关系。"
   }
 }
