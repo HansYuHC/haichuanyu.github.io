@@ -165,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //====================================================================
 //====================================================================
 
+//document.getElementById('linkedin-link').innerHTML = '<img src="images/LI-Logo.png" alt="LinkedIn" style="width: 24px; height: 24px;">';
 
 // 显示模态框
 function showModal() {
