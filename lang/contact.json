@@ -1,0 +1,23 @@
+{
+  "en": {
+    "contactTitle": "Contact - Haichuan Yu's Personal Website",
+    "email": "email: yhchuan962@outlook.com",
+    "telephone": "Cell Phone Number: +49 123-4567-8901",
+    "wechat": "Wechat account:",
+    "wechatDescription": "Scan the QR code above to add my WeChat"
+  },
+  "de": {
+    "contactTitle": "Kontakt - Haichuan Yus persönliche Website",
+    "email": "E-Mail: yhchuan962@outlook.com",
+    "telephone": "Handy Nummer: +49 123-4567-8901",
+    "wechat": "Wechat Konto:",
+    "wechatDescription": "Scannen Sie den QR-Code oben, um meinen WeChat hinzuzufügen"
+  },
+  "zh": {
+    "contactTitle": "联系方式 - 余海川的个人网站",
+    "email": "邮箱: yhchuan962@outlook.com",
+    "telephone": "电话: +49 123-4567-8901",
+    "wechat": "微信:",
+    "wechatDescription": "扫描上面二维码添加我的微信"
+  }
+}

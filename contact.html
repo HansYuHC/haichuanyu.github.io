@@ -3,34 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系方式 - 余海川的个人网站</title>
+    <title data-lang-key="contactTitle">联系方式 - 余海川的个人网站</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="contact">
     <header>
-        <h1>联系方式</h1>
+        <h1 data-lang-key="contact">联系方式</h1>
         <nav>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="academic.html">学术成果</a></li>
-                <li><a href="work.html">工作经历</a></li>
-                <li><a href="contact.html">联系方式</a></li>
+                <li><a href="index.html" data-lang-key="home">首页</a></li>
+                <li><a href="about.html" data-lang-key="about">关于我</a></li>
+                <li><a href="academic.html" data-lang-key="academic">学术成果</a></li>
+                <li><a href="work.html" data-lang-key="work">工作经历</a></li>
+                <li><a href="contact.html" data-lang-key="contact">联系方式</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>联系方式</h2>
-            <p>邮箱：yhc962@gmail.com</p>
-            <p>电话：+49 123 4567 8901</p>
+            <h2 data-lang-key="contact">联系方式</h2>
+            <p data-lang-key="email">邮箱：yhc962@gmail.com</p>
+            <p data-lang-key="telephone">电话：+49 123 4567 8901</p>
+            <!-- 添加微信联系方式 -->
+            <div class="wechat-contact">
+                <p data-lang-key="wechat">微信：</p>
+                <img src="images/wechat.png" alt="微信二维码" style="width: 180px; height: 150px;">
+                <p data-lang-key="wechatDescription">扫描二维码添加我的微信</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 余海川。 保留所有权利。</p>
-        <p>关注我：
-            <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank">LinkedIn</a>
+        <p data-lang-key="copyright">&copy; 2025 余海川。 保留所有权利。</p>
+        <p>
+            <span data-lang-key="followMe" style="vertical-align: middle;">关注我：</span>
+                <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank" >
+                    <img src="images/LI-Logo.png" alt="LinkedIn" style="width: 80px; height: 20px; vertical-align: middle;">
+                </a>
         </p>
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('de')">Deutsch</button>
     </footer>
+    <!-- 确保脚本在页面底部加载 -->
+    <script src="script.js"></script>
 </body>
 </html>
