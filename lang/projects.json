@@ -1,0 +1,41 @@
+{
+    "zh": {
+        "cadProjects": "CAD 项目",
+        "projectCAD1": "项目 1：大学机械设计理论课程项目",
+        "projectCAD1Description_1": "本人在一个由五名学生组成的团队中，创建了一个自上而下的 CAD 模型，并在产品数据管理系统 (PDM 系统) 中进行管理。给定设计任务的处理是机械设计理论课程中融入的 CAD 和 PDM 培训概念的一部分。任务所需的知识是通过E-Learning学习自学获得的，并通过Creo PTC软件应用得到巩固。在座谈会上对结果进行答辩，以确保实现学习目标。",
+        "projectCAD1Description_2": "在该项目中我都达到了包括但不限于如下的要求:解释产品数据管理系统的任务和可能性;创建进阶的CAD模型元素：拉动特征、拉伸混合特征、壳特征和基准曲线;在模型中创建参数和关系等等。",
+        "projectCAD2": "项目 2：飞机引擎建模",
+        "projectCAD2Description": "我利用网络的教学资源，使用Creo PTC从零开始制作了一个飞机引擎的3D模型。",
+        "projectCAD3": "项目 3：铁轨及列车车轮建模",
+        "projectCAD3Description": "在斯泰必鲁斯进行实习期间，我利用Creo PTC建立了一个简单的铁轨和火车车轮接触的立体模型，用以研究能够减少列车驶过时噪音产生量的方法。通过模型可以看出有多种可能的减振方法，包括弹簧，阻尼器，安装于车轮甚至铁轨枕木上的能量吸收器等等。",
+        "excelVbaProjects": "Excel VBA 项目",
+        "projectVBA": "项目 1：VBA数据库管理",
+        "projectVBADescription": "利用网络教程使用VBA程序学习并制作数据库表结构管理软件，提供了 增、删、改、查 相关的操作，可以用于 Access 或 SQL Server 数据库。它通过ADO（ActiveX Data Objects）连接数据库，并执行SQL语句进行操作。"
+    },
+    "en": {
+        "cadProjects": "CAD Projects",
+        "projectCAD1": "Project 1: University Mechanical Design Theory Course Project",
+        "projectCAD1Description_1": "As part of a team of five students, I created a top-down assembly as a CAD model and managed it in a product data management (PDM) system. Completing the assigned design task is part of the CAD and PDM training concept integrated into the Mechanical Engineering course. The knowledge required for the task is acquired through self-study via e-learning and consolidated through practical application. The results are defended in a colloquium, thus ensuring the achievement of the learning objectives.",
+        "projectCAD1Description_2": "In this project, I fulfilled the following requirements, among others: explain the principle of references and apply it appropriately in the CAD model; create advanced design elements: the pull feature, the tensile blend feature, the shell feature, and datum curves; create top-down models using skeleton techniques and edit them in a team, etc.",
+         "projectCAD2": "Project 2: Aircraft Engine Modeling",
+         "projectCAD2Description": "Using online learning resources, I created a 3D model of an aircraft engine from scratch using Creo PTC.",
+         "projectCAD3": "Project 3: Railway Track and Train Wheel Modeling",
+         "projectCAD3Description": "During my internship at Stabilus, I used Creo PTC to create a 3D model of a railway track and train wheel contact to study methods for reducing noise generated when trains pass by. The model shows several possible vibration reduction methods, including springs, dampers, and energy absorbers installed on the wheels or even the railway sleepers.",
+         "excelVbaProjects": "Excel VBA Projects",
+         "projectVBA": "Project 1: VBA Database Management",
+         "projectVBADescription": "Using online tutorials, I learned and developed a database table structure management tool with VBA, providing CRUD (Create, Read, Update, Delete) operations for Access or SQL Server databases. It connects to the database via ADO (ActiveX Data Objects) and executes SQL statements for operations."
+    },
+    "de": {
+        "cadProjects": "CAD Projekte",
+        "projectCAD1": "Projekt 1: Universität Workshop Projekt zur Maschinen Konstruktionslehre",
+        "projectCAD1Description_1": "Ich habe in einem Team von fünf Studierenden eine Top-Down Baugruppe als CAD-Modell erstellt und diese in einem Produktdatenmanagement-System (PDM-System) verwaltet. Die Bearbeitung der gestellten Konstruktionsaufgabe ist Teil des in die Lehrveranstaltung Maschinenkonstruktionslehre integrierten CAD- und PDM-Ausbildungskonzeptes. Die für die Aufgabe benötigten Kenntnisse werden im Selbststudium mittels E-Learning erarbeitet und bei der Anwendung gefestigt. In einem Kolloquium werden die Ergebnisse verteidigt und so das Erreichen der Lernziele sichergestellt.",
+        "projectCAD1Description_2": "In diesem Projekt habe ich unter anderem die folgenden Anforderungen erfüllt: das Prinzip „Referenzen“ erläutern und im CAD-Modell anforderungsgerecht einsetzen; fortgeschrittene Konstruktionselemente erzeugen: das Ziehen-KE, das Zug-Verbund-KE, das Schalen-KE und Bezugskurven; Top-Down-Modelle mit Hilfe Skelett-Technik erstellen und im Team bearbeiten usw.",
+         "projectCAD2": "Projekt 2: Flugzeugmotor-Modellierung",
+        "projectCAD2Description": "Mit Hilfe von Online-Lernressourcen habe ich ein 3D-Modell eines Flugzeugmotors von Grund auf mit Creo PTC erstellt.",
+        "projectCAD3": "Projekt 3: Modellierung von Schienen und Zugrädern",
+        "projectCAD3Description": "Während meines Praktikums bei Stabilus habe ich mit Creo PTC ein 3D-Modell des Kontakts zwischen Schienen und Zugrädern erstellt, um Methoden zur Reduzierung des Lärms bei vorbeifahrenden Zügen zu untersuchen. Das Modell zeigt mehrere mögliche Methoden zur Schwingungsreduzierung, darunter Federn, Dämpfer und Energieabsorber, die an den Rädern oder sogar an den Schwellen angebracht sind.",
+        "excelVbaProjects": "Excel VBA-Projekte",
+        "projectVBA": "Projekt 1: VBA-Datenbankverwaltung",
+        "projectVBADescription": "Mithilfe von Online-Tutorials habe ich ein Datenbank-Tabellenstruktur-Verwaltungstool mit VBA entwickelt, das CRUD-Operationen (Create, Read, Update, Delete) für Access- oder SQL Server-Datenbanken bietet. Es verbindet sich über ADO (ActiveX Data Objects) mit der Datenbank und führt SQL-Anweisungen aus."
+    }
+}
