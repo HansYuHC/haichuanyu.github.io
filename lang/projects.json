@@ -10,7 +10,26 @@
         "projectCAD3Description": "在斯泰必鲁斯进行实习期间，我利用Creo PTC建立了一个简单的铁轨和火车车轮接触的立体模型，用以研究能够减少列车驶过时噪音产生量的方法。通过模型可以看出有多种可能的减振方法，包括弹簧，阻尼器，安装于车轮甚至铁轨枕木上的能量吸收器等等。",
         "excelVbaProjects": "Excel VBA 项目",
         "projectVBA": "项目 1：VBA数据库管理",
-        "projectVBADescription": "利用网络教程使用VBA程序学习并制作数据库表结构管理软件，提供了 增、删、改、查 相关的操作，可以用于 Access 或 SQL Server 数据库。它通过ADO（ActiveX Data Objects）连接数据库，并执行SQL语句进行操作。"
+        "projectVBADescription": "利用网络教程使用VBA程序学习并制作数据库表结构管理软件，提供了 增、删、改、查 相关的操作，可以用于 Access 或 SQL Server 数据库。它通过ADO（ActiveX Data Objects）连接数据库，并执行SQL语句进行操作。",
+
+        "matlabSimulinkProjects": "MATLAB/Simulink 项目",
+        "projectMATLAB_1": "项目 1：本科毕业设计",
+        "projectMATLAB_1_Description": "使用 MATLAB建立模型,进行数据处理、绘图、动态更新，定义滚珠丝杠（Ball Screw）的特性，包括其几何参数、材料属性以及轴向刚度计算,处理测量数据并计算轴承的等效载荷，使用寿命及预期剩余寿命，并监控数据绘图。",
+        "projectMATLAB_2": "项目 2：研究生毕业设计",
+        "projectMATLAB_2_Description": "使用 MATLAB代码计算速度相关的摩擦系数，包括定义摩擦模型，数值积分计算，用泰勒展开近似计算摩擦力等。之后研究摩擦相关的双自由度动力系统，分析它在不同条件下的运动特性，并进行稳定性分析。",
+        "projectMATLAB_3": "项目 3：铁路减振降噪模型模拟仿真",
+        "projectMATLAB_3_Description": "使用MATLAB代码建立了列车悬架的 LQR 控制器，通过 Simulink 比较主动/被动悬架的性能。此外使用Simulink建立了不同的主动降噪算法模型，对降噪效果进行比较",
+        "pythonProjects": "Python 项目",
+        "projectPython1": "项目 1：使用 pygame 编写的 2D 射击游戏",
+      "projectPython1Description": "使用 pygame 编写的 2D 射击游戏，玩家控制一只兔子（Bunny），通过射箭攻击来保卫城堡不受獾（Badgers）的袭击。玩家控制角色，可以使用 WASD 键移动，鼠标点击发射弓箭并控制发射角度，獾作为敌人定期从屏幕右边生成并向左移动攻击城堡，受到獾的攻击会损失生命值。",
+      "projectPython2": "项目 2：使用python爬取酒店评价",
+      "project2Description": "使用python代码生成一个完整的 Booking.com 酒店评论爬取和词云生成工具，为旅行做好充足准备!",
+      "projectPython3": "项目 3：使用python爬取德国及全球工业行业最新信息",
+      "project3Description": "使用python的库requests 或 selenium 爬取各个网站的相关新闻; 解析符合关键词的新闻;生成 PDF 报告。",
+      "projectPython4": "项目 4：使用python总结工作细节并提出改进建议",
+      "project4Description": "在梅赛德斯奔驰公司的车辆静态调试工作期间利用python编写程序，总结不同阶段车辆电子控制单元的错误率，以及每辆车的平均处理时长，分析原因并提出改进意见。",
+      "otherProjects": "其他项目"
+
     },
     "en": {
         "cadProjects": "CAD Projects",
@@ -23,7 +42,24 @@
          "projectCAD3Description": "During my internship at Stabilus, I used Creo PTC to create a 3D model of a railway track and train wheel contact to study methods for reducing noise generated when trains pass by. The model shows several possible vibration reduction methods, including springs, dampers, and energy absorbers installed on the wheels or even the railway sleepers.",
          "excelVbaProjects": "Excel VBA Projects",
          "projectVBA": "Project 1: VBA Database Management",
-         "projectVBADescription": "Using online tutorials, I learned and developed a database table structure management tool with VBA, providing CRUD (Create, Read, Update, Delete) operations for Access or SQL Server databases. It connects to the database via ADO (ActiveX Data Objects) and executes SQL statements for operations."
+         "projectVBADescription": "Using online tutorials, I learned and developed a database table structure management tool with VBA, providing CRUD (Create, Read, Update, Delete) operations for Access or SQL Server databases. It connects to the database via ADO (ActiveX Data Objects) and executes SQL statements for operations.",
+       "matlabSimulinkProjects": "MATLAB/Simulink Projects",
+    "projectMATLAB_1": "Project 1: Bachelor's Thesis",
+    "projectMATLAB_1_Description": "Using MATLAB to build models, process data, plot graphs, and dynamically update. Defined the characteristics of a ball screw, including its geometric parameters, material properties, and axial stiffness calculations. Processed measurement data to calculate the equivalent load, service life, and expected remaining life of bearings, and monitored data plotting.",
+    "projectMATLAB_2": "Project 2: Master's Thesis",
+    "projectMATLAB_2_Description": "Used MATLAB code to calculate velocity-dependent friction coefficients, including defining friction models, numerical integration, and approximating friction forces using Taylor series expansion. Then studied a friction-related two-degree-of-freedom dynamic system, analyzed its motion characteristics under different conditions, and performed stability analysis.",
+    "projectMATLAB_3": "Project 3: Railway Vibration and Noise Reduction Model Simulation",
+    "projectMATLAB_3_Description": "Developed an LQR controller for train suspension using MATLAB code and compared the performance of active/passive suspensions through Simulink. Additionally, created different active noise reduction algorithm models in Simulink and compared their noise reduction effects.",
+    "pythonProjects": "Python Projects",
+    "projectPython1": "Project 1: 2D Shooting Game Using Pygame",
+    "projectPython1Description": "A 2D shooting game developed using Pygame, where the player controls a bunny defending a castle from badgers by shooting arrows. The player can move the character using the WASD keys and click the mouse to shoot arrows while controlling the firing angle. Badgers, as enemies, periodically spawn from the right side of the screen and move left to attack the castle, causing health loss upon contact.",
+    "projectPython2": "Project 2: Hotel Review Scraping Using Python",
+    "project2Description": "Developed a complete Booking.com hotel review scraping and word cloud generation tool using Python to prepare thoroughly for travel!",
+    "projectPython3": "Project 3: Scraping Latest Industrial News in Germany and Globally Using Python",
+    "project3Description": "Used Python libraries like requests or selenium to scrape relevant news from various websites, parsed news matching keywords, and generated PDF reports.",
+    "projectPython4": "Project 4: Summarizing Work Details and Proposing Improvements Using Python",
+    "project4Description": "During my work on vehicle static debugging at Mercedes-Benz, I wrote a Python program to summarize the error rates of electronic control units at different stages and the average processing time per vehicle, analyzed the reasons, and proposed improvement suggestions.",
+    "otherProjects": "Other Projects"
     },
     "de": {
         "cadProjects": "CAD Projekte",
@@ -36,6 +72,23 @@
         "projectCAD3Description": "Während meines Praktikums bei Stabilus habe ich mit Creo PTC ein 3D-Modell des Kontakts zwischen Schienen und Zugrädern erstellt, um Methoden zur Reduzierung des Lärms bei vorbeifahrenden Zügen zu untersuchen. Das Modell zeigt mehrere mögliche Methoden zur Schwingungsreduzierung, darunter Federn, Dämpfer und Energieabsorber, die an den Rädern oder sogar an den Schwellen angebracht sind.",
         "excelVbaProjects": "Excel VBA-Projekte",
         "projectVBA": "Projekt 1: VBA-Datenbankverwaltung",
-        "projectVBADescription": "Mithilfe von Online-Tutorials habe ich ein Datenbank-Tabellenstruktur-Verwaltungstool mit VBA entwickelt, das CRUD-Operationen (Create, Read, Update, Delete) für Access- oder SQL Server-Datenbanken bietet. Es verbindet sich über ADO (ActiveX Data Objects) mit der Datenbank und führt SQL-Anweisungen aus."
+        "projectVBADescription": "Mithilfe von Online-Tutorials habe ich ein Datenbank-Tabellenstruktur-Verwaltungstool mit VBA entwickelt, das CRUD-Operationen (Create, Read, Update, Delete) für Access- oder SQL Server-Datenbanken bietet. Es verbindet sich über ADO (ActiveX Data Objects) mit der Datenbank und führt SQL-Anweisungen aus.",
+      "matlabSimulinkProjects": "MATLAB/Simulink-Projekte",
+    "projectMATLAB_1": "Projekt 1: Bachelorarbeit",
+    "projectMATLAB_1_Description": "Verwendung von MATLAB zur Erstellung von Modellen, Datenverarbeitung, grafischer Darstellung und dynamischer Aktualisierung. Definierte die Eigenschaften einer Kugelumlaufspindel, einschließlich ihrer geometrischen Parameter, Materialeigenschaften und Berechnungen der axialen Steifigkeit. Verarbeitete Messdaten, um die äquivalente Belastung, Lebensdauer und voraussichtliche Restlebensdauer von Lagern zu berechnen, und überwachte die Datenvisualisierung.",
+    "projectMATLAB_2": "Projekt 2: Masterarbeit",
+    "projectMATLAB_2_Description": "Verwendete MATLAB-Code zur Berechnung geschwindigkeitsabhängiger Reibungskoeffizienten, einschließlich der Definition von Reibungsmodellen, numerischer Integration und der Annäherung von Reibungskräften mittels Taylor-Reihenentwicklung. Anschließend wurde ein reibungsbezogenes dynamisches System mit zwei Freiheitsgraden untersucht, dessen Bewegungsverhalten unter verschiedenen Bedingungen analysiert und eine Stabilitätsanalyse durchgeführt.",
+    "projectMATLAB_3": "Projekt 3: Simulation von Schwingungs- und Geräuschreduktionsmodellen für Schienenfahrzeuge",
+    "projectMATLAB_3_Description": "Entwickelte einen LQR-Regler für die Zugfederung mit MATLAB-Code und verglich die Leistung von aktiven/passiven Federungen durch Simulink. Zusätzlich wurden verschiedene Modelle für aktive Geräuschreduktionsalgorithmen in Simulink erstellt und deren Geräuschreduktionseffekte verglichen.",
+    "pythonProjects": "Python-Projekte",
+    "projectPython1": "Projekt 1: 2D-Schießspiel mit Pygame",
+    "projectPython1Description": "Ein 2D-Schießspiel, das mit Pygame entwickelt wurde, bei dem der Spieler einen Hasen steuert, der eine Burg vor Dachsen verteidigt, indem er Pfeile abschießt. Der Spieler kann die Figur mit den WASD-Tasten bewegen und mit einem Mausklick Pfeile abschießen, wobei der Abschusswinkel gesteuert wird. Dachse, als Gegner, erscheinen regelmäßig auf der rechten Seite des Bildschirms und bewegen sich nach links, um die Burg anzugreifen, was bei Kontakt zu Gesundheitsverlust führt.",
+    "projectPython2": "Projekt 2: Hotelbewertungen mit Python scrapen",
+    "project2Description": "Ein komplettes Tool zur Erfassung von Hotelbewertungen auf Booking.com und zur Erstellung von Wortwolken mit Python, um sich gründlich auf Reisen vorzubereiten!",
+    "projectPython3": "Projekt 3: Aktuelle Nachrichten aus der Industrie in Deutschland und weltweit mit Python scrapen",
+    "project3Description": "Verwendete Python-Bibliotheken wie requests oder selenium, um relevante Nachrichten von verschiedenen Websites zu scrapen, analysierte Nachrichten, die Schlüsselwörtern entsprachen, und erstellte PDF-Berichte.",
+    "projectPython4": "Projekt 4: Zusammenfassung von Arbeitsdetails und Vorschläge zur Verbesserung mit Python",
+    "project4Description": "Während meiner Arbeit an der statischen Fehlersuche bei Mercedes-Benz schrieb ich ein Python-Programm, um die Fehlerraten von elektronischen Steuergeräten in verschiedenen Phasen und die durchschnittliche Bearbeitungszeit pro Fahrzeug zusammenzufassen, analysierte die Gründe und schlug Verbesserungsvorschläge vor.",
+    "otherProjects": "Andere Projekte"
     }
 }
