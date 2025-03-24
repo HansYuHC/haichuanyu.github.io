@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="certificatesTitle">我的证书 - 余海川的个人网站</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 仅针对证书页面的样式 */
+        .certificates-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .certificate-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .certificate-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .certificate-img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eee;
+        }
+
+        .certificate-caption {
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .certificates-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body data-page="certificates">
+    <header>
+        <h1 data-lang-key="myCertificates">我的证书</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang-key="home">首页</a></li>
+                <li><a href="about.html" data-lang-key="about">关于我</a></li>
+                <li><a href="projects.html" data-lang-key="projects">个人项目</a></li>
+                <li><a href="academic.html" data-lang-key="academic">学术成果</a></li>
+                <li><a href="work.html" data-lang-key="work">工作经历</a></li>
+                <li><a href="certificates.html" data-lang-key="certificates">我的证书</a></li>
+                <li><a href="contact.html" data-lang-key="contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="certificates-container">
+
+            <!-- 高中毕业证书 -->
+            <div class="certificate-item">
+                <img src="images/cert-highschool.jpg" alt="高中毕业证书" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="highschoolCert">青岛二中毕业证书 (2011)</div>
+            </div>
+
+            <div class="certificate-item">
+                <img src="images/cert-abitur.jpg" alt="高考成绩证书" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="GaoKaoCert">高考成绩证明 (2012)</div>
+            </div>
+
+            <!-- SCUT成绩单 -->
+            <div class="certificate-item">
+                <img src="images/cert-scut.jpg" alt="华南理工成绩单" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="scutTranscript">华南理工大学第一学期成绩单 (2013)</div>
+            </div>
+
+            <!-- APS证书 -->
+            <div class="certificate-item">
+                <img src="images/cert-aps.png" alt="APS证书" class="certificate-img">
+                    <div class="certificate-caption" data-lang-key="apsCert">APS认证证书 (2013)</div>
+            </div>
+
+            <!-- DSH证书 -->
+            <div class="certificate-item">
+                <img src="images/cert-dsh.jpg" alt="DSH语言证书" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="dshCert">DSH-2德语语言证书 (2014)</div>
+            </div>
+
+            <!-- CAD证书 -->
+            <div class="certificate-item">
+                <img src="images/cert-cad.png" alt="CAD证书" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="cadCert">Creo Parametric高级认证 (2015)</div>
+            </div>
+
+             <!-- Schaeffler实习证明 -->
+            <div class="certificate-item">
+                <img src="images/cert-schaeffler.jpg" alt="Schaeffler实习证明" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="schaefflerIntern">舍弗勒集团实习证明 (2016)</div>
+            </div>
+
+            <!-- KIT本科毕业证 -->
+            <div class="certificate-item">
+                <img src="images/cert-kit-bachelor.jpg" alt="KIT本科毕业证" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="kitBachelor">卡尔斯鲁厄理工学院机械工程学士 (2019)</div>
+            </div>
+
+            <!-- Stabilus实习证明 -->
+            <div class="certificate-item">
+                <img src="images/cert-stabilus.png" alt="Stabilus实习证明" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="stabilusIntern">斯泰必鲁斯实习证明 (2019)</div>
+            </div>
+
+            <!-- KIT硕士毕业证 -->
+            <div class="certificate-item">
+                <img src="images/cert-kit-master.jpeg" alt="KIT硕士毕业证" class="certificate-img">
+                <div class="certificate-caption" data-lang-key="kitMaster">卡尔斯鲁厄理工学院机械工程硕士 (2020)</div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p data-lang-key="copyright">&copy; 2025 余海川。 保留所有权利。</p>
+        <p>
+            <span data-lang-key="followMe" style="vertical-align: middle;">关注我：</span>
+            <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank" >
+                <img src="images/LI-Logo.png" alt="LinkedIn" style="width: 80px; height: 20px; vertical-align: middle;">
+            </a>
+        </p>
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('de')">Deutsch</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

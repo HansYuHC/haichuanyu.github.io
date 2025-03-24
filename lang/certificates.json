@@ -1,0 +1,47 @@
+{
+    "zh": {
+        "certificatesTitle": "我的证书 - 余海川的个人网站",
+        "myCertificates": "我的证书",
+        "certificates": "我的证书",
+        "highschoolCert": "青岛二中毕业证书 (2011)",
+        "scutTranscript": "华南理工大学第一学期成绩单 (2013)",
+        "dshCert": "DSH-2德语语言证书 (2014)",
+        "kitBachelor": "卡尔斯鲁厄理工学院机械工程学士 (2019)",
+        "cadCert": "Creo Parametric高级认证 (2015)",
+        "kitMaster": "卡尔斯鲁厄理工学院机械工程硕士 (2022)",
+        "schaefflerIntern": "舍弗勒集团实习证明 (2017)",
+        "stabilusIntern": "斯泰必鲁斯实习证明 (2022)",
+        "GaoKaoCert": "高考成绩证明 (2012)",
+        "apsCert": "APS认证证书 (2013)"
+    },
+    "en": {
+        "certificatesTitle": "My Certificates - Haichuan Yu's Personal Website",
+        "myCertificates": "My Certificates",
+        "certificates": "Certificates",
+        "highschoolCert": "Qingdao No.2 High School Diploma (2011)",
+        "scutTranscript": "SCUT First Semester Transcript (2013)",
+        "dshCert": "DSH-2 German Language Certificate (2014)",
+        "kitBachelor": "KIT Bachelor in Mechanical Engineering (2019)",
+        "cadCert": "Creo Parametric Advanced Certification (2015)",
+        "kitMaster": "KIT Master in Mechanical Engineering (2022)",
+        "schaefflerIntern": "Schaeffler Internship Certificate (2017)",
+        "stabilusIntern": "Stabilus Internship Certificate (2022)",
+        "GaoKaoCert": "College Entrance Examination Results Certificate (GaoKao, 2012)",
+        "apsCert": "APS Certification (2013)"
+    },
+    "de": {
+        "certificatesTitle": "Meine Zeugnisse - Haichuan Yus persönliche Website",
+        "myCertificates": "Meine Zeugnisse",
+        "certificates": "Zeugnisse",
+        "highschoolCert": "Abschlusszeugnis der Qingdao No.2 High School (2011)",
+        "scutTranscript": "SCUT Transcript des ersten Semesters (2013)",
+        "dshCert": "DSH-2 Deutsch-Zertifikat (2014)",
+        "kitBachelor": "KIT Bachelor in Maschinenbau (2019)",
+        "cadCert": "Creo Parametric Fortgeschrittenen-Zertifizierung (2015)",
+        "kitMaster": "KIT Master in Maschinenbau (2022)",
+        "schaefflerIntern": "Praktikumszeugnis von Schaeffler (2017)",
+        "stabilusIntern": "Praktikumszeugnis von Stabilus (2022)",
+        "GaoKaoCert": "Zeugnis über die Ergebnisse der Hochschulaufnahmeprüfung (GaoKao oder Abtiur, 2012)",
+        "apsCert": "APS-Zertifizierung (2013)"
+    }
+}
