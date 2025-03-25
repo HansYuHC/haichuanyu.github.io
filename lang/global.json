@@ -9,6 +9,7 @@
     "certificates": "My Certificates",
     "contact": "Contact",
     "aboutDescription": "Qingdao -> Guangzhou -> Karlsruhe -> Böblingen",
+    "projectsDescription": "CAD Projects; Excel VBA Projects; MATLAB/Simulink Projects; Python Projects; Other Projects",
     "copyright": "\u00A9 2025 Haichuan Yu. All rights reserved.",
     "followMe": "Follow me:",
     "linkedin": "LinkedIn",
@@ -16,7 +17,8 @@
     "scut": "South China University of Technology",
     "kit": "Karlsruhe Institute of Technology",
     "hongyuan": "Laizhou Hongyuan vise Manufacturing Co., Ltd",
-    "luolin": "Qingdao Lolin Mech Inc."
+    "luolin": "Qingdao Lolin Mech Inc.",
+    "certificatesDescription": "Certificates from high school to college graduation"
   },
   "de": {
     "welcome": "Willkommen auf Haichuan Yus persönlicher Website",
@@ -28,6 +30,7 @@
     "certificates": "Meine Zeugnisse",
     "contact": "Kontakt",
     "aboutDescription": "Qingdao -> Guangzhou -> Karlsruhe -> Böblingen",
+    "projectsDescription": "CAD-Projekte; Excel VBA-Projekte; MATLAB/Simulink-Projekte; Python-Projekte; Andere Projekte",
     "copyright": "\u00A9 2025 Haichuan Yu. Alle Rechte vorbehalten.",
     "followMe": "Folge mir:",
     "linkedin": "LinkedIn",
@@ -35,7 +38,8 @@
     "scut": "Südchinesische Technische Universität",
     "kit": "Karlsruher Institut für Technologie",
     "hongyuan": "Laizhou Hongyuan Schraubstock Manufacturing Co., Ltd.",
-    "luolin": "Qingdao Lolin Mech Inc."
+    "luolin": "Qingdao Lolin Mech Inc.",
+    "certificatesDescription": "Zeugnisse vom Abitur bis zum Hochschulabschluss"
   },
   "zh": {
     "welcome": "欢迎来到余海川的个人网站",
@@ -47,6 +51,7 @@
     "certificates": "我的证书",
     "contact": "联系方式",
     "aboutDescription": "青岛->广州->卡尔斯鲁厄->伯布林根",
+    "projectsDescription": "CAD项目; Excel VBA项目; MATLAB/Simulink 项目; Python 项目; 其他项目",
     "copyright": "\u00A9 2025 余海川。 保留所有权利。",
     "followMe": "关注我：",
     "linkedin": "LinkedIn",
@@ -54,6 +59,7 @@
     "scut": "华南理工大学",
     "kit": "卡尔斯鲁厄理工学院",
     "hongyuan": "莱州鸿源台钳制造有限公司",
-    "luolin": "青岛洛林机械有限公司"
+    "luolin": "青岛洛林机械有限公司",
+    "certificatesDescription": "从高中到大学毕业期间的证书"
   }
 }
