@@ -8,20 +8,37 @@
 </head>
 <body style="background-image: url('https://github.com/HansYuHC/haichuanyu.github.io/blob/main/images/background_qd.jpg?raw=true'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
     <header>
+
+        <div class="language-switcher">
+            <div class="language-option" onclick="changeLanguage('zh')">
+                <img src="images/flags/china.png" alt="中文" class="flag-icon">
+                <span class="language-text">中文</span>
+            </div>
+            <div class="language-option" onclick="changeLanguage('en')">
+                <img src="images/flags/usa.png" alt="English" class="flag-icon">
+                <span class="language-text">English</span>
+            </div>
+            <div class="language-option" onclick="changeLanguage('de')">
+                <img src="images/flags/germany.png" alt="Deutsch" class="flag-icon">
+                <span class="language-text">Deutsch</span>
+            </div>
+        </div>
+
         <h1 data-lang-key="welcome">欢迎来到余海川的个人网站</h1>
         <div id="navbar"></div>
+
     </header>
     <main>
         <div class="content-wrapper"> <!-- 添加半透明背景层 -->
-        <section id="about">
+        <section id="about" onclick="location.href='about.html'" style="cursor: pointer;">
             <h2 data-lang-key="about">关于我</h2>
             <p data-lang-key="aboutDescription">青岛->广州->卡尔斯鲁厄->伯布林根</p>
         </section>
-        <section id="projects">
+        <section id="projects" onclick="location.href='projects.html'" style="cursor: pointer;">
             <h2 data-lang-key="projects">个人项目</h2>
             <p data-lang-key="projectsDescription">CAD项目; Excel VBA项目; MATLAB/Simulink 项目; Python 项目; 其他项目 </p>
         </section>
-        <section id="academic">
+        <section id="academic" onclick="location.href='academic.html'" style="cursor: pointer;">
             <h2 data-lang-key="academic">学术成果</h2>
             <p>
                 <span data-lang-key="qdez">山东省青岛第二中学</span>
@@ -36,7 +53,7 @@
                 <img src="images/kit-logo.png" alt="卡尔斯鲁厄理工学院 Logo" class="logo">
             </p>
         </section>
-        <section id="work">
+        <section id="work" onclick="location.href='work.html'" style="cursor: pointer;">
             <h2 data-lang-key="work">工作经历</h2>
             <p>
                 <span data-lang-key="hongyuan">莱州鸿源台钳制造有限公司</span>
@@ -64,9 +81,13 @@
                 <img src="images/mercedes-logo.png" alt="Mercedes-Benz AG Logo" class="logo">
             </p>
         </section>
-        <section id="certificates">
+        <section id="certificates" onclick="location.href='certificates.html'" style="cursor: pointer;">
             <h2 data-lang-key="certificates">我的证书</h2>
             <p data-lang-key="certificatesDescription">从高中到大学毕业期间的证书 </p>
+        </section>
+        <section id="contact" onclick="location.href='contact.html'" style="cursor: pointer;">
+            <h2 data-lang-key="contact">联系方式</h2>
+            <p data-lang-key="contactDescription">欢迎联系我!</p>
         </section>
       </div>
     </main>

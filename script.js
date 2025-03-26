@@ -223,6 +223,22 @@ function updateContent(data) {
     });
 }
 
+function updateLanguageSwitcher(currentLang) {
+    const options = document.querySelectorAll('.language-option');
+    options.forEach(option => {
+        const lang = option.getAttribute('onclick').match(/'(\w+)'/)[1];
+        option.classList.toggle('active', lang === currentLang);
+    });
+}
+
+
+
+// 初始化时调用
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('userLanguage') || 'zh';
+    updateLanguageSwitcher(savedLang);
+});
+
 // 切换语言
 function changeLanguage(lang) {
     // 如果当前语言已经是目标语言，则无需切换
@@ -241,6 +257,9 @@ function changeLanguage(lang) {
 
     // 重定向到当前页面（带语言参数）
     window.location.href = currentUrl.toString();
+
+    updateLanguageSwitcher(lang);
+
 }
 
 // 初始化页面语言
