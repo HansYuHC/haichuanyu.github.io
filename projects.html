@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-page="projects">
-    <header>
-        <h1 data-lang-key="projects">个人项目</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" data-lang-key="home">首页</a></li>
-                <li><a href="about.html" data-lang-key="about">关于我</a></li>
-                <li><a href="projects.html" data-lang-key="projects">个人项目</a></li>
-                <li><a href="academic.html" data-lang-key="academic">学术成果</a></li>
-                <li><a href="work.html" data-lang-key="work">工作经历</a></li>
-                <li><a href="certificates.html" data-lang-key="certificates">我的证书</a></li>
-                <li><a href="contact.html" data-lang-key="contact">联系方式</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <!-- 引入公共header -->
+    <div id="header-container"></div>
+
+    <script>
+    // 加载完header后插入专属标题
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
+
+            // 插入首页专属标题
+            const titleContainer = document.getElementById('dynamic-title-container');
+            titleContainer.innerHTML = `
+                <h1 data-lang-key="projects">个人项目</h1>
+            `;
+        });
+    </script>
+
     <main>
         <section>
             <h2 data-lang-key="cadProjects">CAD 项目</h2>

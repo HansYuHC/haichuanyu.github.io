@@ -545,3 +545,90 @@ section ul li {
         height: 16px;
     }
 }
+
+/* 移动端头部控制 */
+@media (max-width: 768px) {
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .desktop-language {
+        display: none !important;
+    }
+
+    .nav-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-container.active {
+        max-height: 100vh;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 24px;
+    }
+}
+
+/* 桌面端控制 */
+@media (min-width: 769px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .nav-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .nav-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .desktop-language {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* 基础增强（可选） */
+.hamburger:hover {
+    opacity: 0.8;
+}
+
+/* 确保标题和导航栏的相对位置不变 */
+header {
+    position: relative;
+}
+
+#dynamic-title-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* 语言切换器定位保持不变 */
+.desktop-language {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    #dynamic-title-container {
+        margin: 15px 0;
+        padding: 0 15px;
+    }
+}

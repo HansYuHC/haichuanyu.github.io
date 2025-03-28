@@ -7,27 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-image: url('https://github.com/HansYuHC/haichuanyu.github.io/blob/main/images/background_qd.jpg?raw=true'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
-    <header>
+    <!-- 引入公共header -->
+    <div id="header-container"></div>
 
-        <div class="language-switcher">
-            <div class="language-option" onclick="changeLanguage('zh')">
-                <img src="images/flags/china.png" alt="中文" class="flag-icon">
-                <span class="language-text">中文</span>
-            </div>
-            <div class="language-option" onclick="changeLanguage('en')">
-                <img src="images/flags/usa.png" alt="English" class="flag-icon">
-                <span class="language-text">English</span>
-            </div>
-            <div class="language-option" onclick="changeLanguage('de')">
-                <img src="images/flags/germany.png" alt="Deutsch" class="flag-icon">
-                <span class="language-text">Deutsch</span>
-            </div>
-        </div>
+    <script>
+    // 加载完header后插入专属标题
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-container').innerHTML = html;
 
-        <h1 data-lang-key="welcome">欢迎来到余海川的个人网站</h1>
-        <div id="navbar"></div>
+            // 插入首页专属标题
+            const titleContainer = document.getElementById('dynamic-title-container');
+            titleContainer.innerHTML = `
+                <h1 data-lang-key="welcome">欢迎来到余海川的个人网站</h1>
+            `;
+        });
+    </script>
 
-    </header>
+
     <main>
         <div class="content-wrapper"> <!-- 添加半透明背景层 -->
         <section id="about" onclick="location.href='about.html'" style="cursor: pointer;">

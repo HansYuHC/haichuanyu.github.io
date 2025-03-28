@@ -458,3 +458,12 @@ function translatePopupContent(popupTemplate, combinedData) {
 function translatePopup(popupText, combinedData) {
     return combinedData[popupText] || popupText;
 }
+
+
+function toggleMenu() {
+    document.querySelector('.nav-container').classList.toggle('active');
+}
+
+function closeMenu() {
+    document.querySelector('.nav-container').classList.remove('active');
+}

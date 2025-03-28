@@ -1,0 +1,47 @@
+<header>
+        <!-- 移动端控制栏（汉堡菜单+国旗） -->
+        <div class="mobile-header"> <!-- 修改了class名 -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="language-switcher-mobile">
+                <img src="images/flags/china.png" alt="中文" class="flag-icon" onclick="changeLanguage('zh')">
+                <img src="images/flags/usa.png" alt="English" class="flag-icon" onclick="changeLanguage('en')">
+                <img src="images/flags/germany.png" alt="Deutsch" class="flag-icon" onclick="changeLanguage('de')">
+            </div>
+        </div>
+
+        <!-- 桌面端语言切换器 -->
+        <div class="language-switcher desktop-language"> <!-- 添加了class -->
+            <div class="language-option" onclick="changeLanguage('zh')">
+                <img src="images/flags/china.png" alt="中文" class="flag-icon">
+                <span class="language-text">中文</span>
+            </div>
+            <div class="language-option" onclick="changeLanguage('en')">
+                <img src="images/flags/usa.png" alt="English" class="flag-icon">
+                <span class="language-text">English</span>
+            </div>
+            <div class="language-option" onclick="changeLanguage('de')">
+                <img src="images/flags/germany.png" alt="Deutsch" class="flag-icon">
+                <span class="language-text">Deutsch</span>
+            </div>
+        </div>
+
+        <!-- 标题容器（留空，由各页面填充） -->
+        <div id="dynamic-title-container"></div>
+
+
+        <!-- 导航栏容器 -->
+        <div class="nav-container">
+            <nav id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" data-lang-key="home" onclick="closeMenu()">首页</a></li>
+                    <li><a href="about.html" data-lang-key="about" onclick="closeMenu()">关于我</a></li>
+                    <li><a href="projects.html" data-lang-key="projects" onclick="closeMenu()">个人项目</a></li>
+                    <li><a href="academic.html" data-lang-key="academic" onclick="closeMenu()">学术成果</a></li>
+                    <li><a href="work.html" data-lang-key="work" onclick="closeMenu()">工作经历</a></li>
+                    <li><a href="certificates.html" data-lang-key="certificates" onclick="closeMenu()">我的证书</a></li>
+                    <li><a href="contact.html" data-lang-key="contact" onclick="closeMenu()">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
