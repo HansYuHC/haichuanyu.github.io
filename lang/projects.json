@@ -58,7 +58,7 @@
     "projectPython3": "Project 3: Scraping Latest Industrial News in Germany and Globally Using Python",
     "project3Description": "Used Python libraries like requests or selenium to scrape relevant news from various websites, parsed news matching keywords, and generated PDF reports.",
     "projectPython4": "Project 4: Summarizing Work Details and Proposing Improvements Using Python",
-    "project4Description": "During my work on vehicle static debugging at Mercedes-Benz, I wrote a Python program to summarize the error rates of electronic control units at different stages and the average processing time per vehicle, analyzed the reasons, and proposed improvement suggestions.",
+    "project4Description": "During my work on vehicle E/E static commissioning at Mercedes-Benz, I wrote a Python program to summarize the error rates of electronic control units at different stages and the average processing time per vehicle, analyzed the reasons, and proposed improvement suggestions.",
     "otherProjects": "Other Projects"
     },
     "de": {
@@ -88,7 +88,7 @@
     "projectPython3": "Projekt 3: Aktuelle Nachrichten aus der Industrie in Deutschland und weltweit mit Python scrapen",
     "project3Description": "Verwendete Python-Bibliotheken wie requests oder selenium, um relevante Nachrichten von verschiedenen Websites zu scrapen, analysierte Nachrichten, die Schlüsselwörtern entsprachen, und erstellte PDF-Berichte.",
     "projectPython4": "Projekt 4: Zusammenfassung von Arbeitsdetails und Vorschläge zur Verbesserung mit Python",
-    "project4Description": "Während meiner Arbeit an der statischen Fehlersuche bei Mercedes-Benz schrieb ich ein Python-Programm, um die Fehlerraten von elektronischen Steuergeräten in verschiedenen Phasen und die durchschnittliche Bearbeitungszeit pro Fahrzeug zusammenzufassen, analysierte die Gründe und schlug Verbesserungsvorschläge vor.",
+    "project4Description": "Während meiner Arbeit an der E/E statischen Inbetriebnahme bei Mercedes-Benz schrieb ich ein Python-Programm, um die Fehlerraten von elektronischen Steuergeräten in verschiedenen Phasen und die durchschnittliche Bearbeitungszeit pro Fahrzeug zusammenzufassen, analysierte die Gründe und schlug Verbesserungsvorschläge vor.",
     "otherProjects": "Andere Projekte"
     }
 }
