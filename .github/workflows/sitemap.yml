@@ -1,0 +1,31 @@
+name: Auto Sitemap
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate sitemap
+        run: |
+          python scripts/generate_sitemap.py
+          cat sitemap.xml  # 预览生成内容
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --quiet || (git commit -m "🔄 Auto-update sitemap" && git push)
