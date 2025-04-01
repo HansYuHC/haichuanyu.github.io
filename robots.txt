@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hansyuhc.github.io/haichuanyu.github.io/sitemap.xml
