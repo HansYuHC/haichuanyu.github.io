@@ -1,4 +1,5 @@
 import os
+from xml.sax.saxutils import escape
 from datetime import datetime
 from urllib.parse import urljoin
 from typing import List, Set
@@ -40,9 +41,14 @@ def should_include(url: str) -> bool:
 
 
 def generate_xml(files: List[str]) -> str:
-    """生成XML内容"""
-    xml = ['<?xml version="1.0" encoding="UTF-8"?>']
-    xml.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+    """生成符合Google标准的XML站点地图内容"""
+    xml = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"',
+        '        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9',
+        '        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">'
+    ]
 
     today = datetime.now().strftime("%Y-%m-%d")
 
@@ -52,15 +58,15 @@ def generate_xml(files: List[str]) -> str:
 
         url = urljoin(BASE_URL, file)
         if file.endswith('index.html'):
-            url = url[:-10]  # 移除index.html
+            url = url.rstrip('/index.html')  # 规范化首页URL
 
-        priority = PRIORITY_MAP.get(file, 0.8)
+        priority = PRIORITY_MAP.get(os.path.basename(file), 0.8)
 
         xml.append(f"""  <url>
-    <loc>{url}</loc>
+    <loc>{escape(url)}</loc>
     <lastmod>{today}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>{priority}</priority>
+    <priority>{priority:.1f}</priority>
   </url>""")
 
     xml.append("</urlset>")
